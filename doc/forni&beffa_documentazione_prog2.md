@@ -9,7 +9,7 @@
 1. [Analisi](#analisi)
 
   - [Analisi del dominio](#analisi-del-dominio)
-  
+
   - [Analisi dei mezzi](#analisi-dei-mezzi)
 
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
@@ -88,17 +88,12 @@
 
   Esempio di abstract:
 
-  > *As the size and complexity of today’s most modern computer chips
-  > increase, new techniques must be developed to effectively design and
-  > create Very Large Scale Integration chips quickly. For this project, a
-  > new type of hardware compiler is created. This hardware compiler will
-  > read a C++ program, and physically design a suitable microprocessor
-  > intended for running that specific program. With this new and powerful
-  > compiler, it is possible to design anything from a small adder, to a
-  > microprocessor with millions of transistors. Designing new computer
-  > chips, such as the Pentium 4, can require dozens of engineers and
-  > months of time. With the help of this compiler, a single person could
-  > design such a large-scale microprocessor in just weeks.*
+  > *The project requirement is to create a java and a robotC library.
+  > In these libraries, we have to put some useful classes for the guys of
+  > the second years. These classes will be used for the WRO, so they will
+  > have some methods for every actuator and sensor. These libraries should be
+  > universal and user-friendly, so the guys could use it in a
+  > simple way for their interests.*
 
 ### Scopo
 
@@ -137,39 +132,14 @@
 
 ### Analisi e specifica dei requisiti
 
-  Il progettista, dopo aver ricevuto il mandato, in collaborazione con il
-  committente redige una lista di requisiti. Durante questi incontri,
-  tramite interviste (da inserire nei diari), il progettista deve cercare
-  di rispondere alle seguenti domande:
-
-  -   Quali sono i bisogni del committente?
-
-  -   Quali funzioni deve svolgere il prodotto?
-
-  -   Come devono essere implementate?
-
-  -   L’utente, come vorrebbe/dovrebbe interagire con il prodotto?
-
-  -   Come verrà utilizzato il prodotto?
-
-  -   Che tipo di interfaccia si immagina?
-
-  -   Che prestazioni minime deve fornire il prodotto?
-
-  -   Che grado di sicurezza deve avere il prodotto?
-
-  -   …
-
-  In base alla lista dei requisiti e all’analisi degli stessi, il
-  progettista redige una *specifica dei requisiti* in cui elenca e
-  descrive in modo dettagliato quali sono le funzionalità che il prodotto
-  fornirà. La specifica dovrebbe essere abbastanza dettagliata da poter
-  essere utilizzata come base per lo sviluppo, ma non troppo; ad esempio
-  non dovrebbe contenere dettagli di implementazione, o definizioni
-  dettagliate dell’interfaccia grafica a meno che questi non siano
-  considerati cruciali. Non si deve scordare che i requisiti non
-  rappresentano delle attività bensì delle caratteristiche che il prodotto
-  dovrà possedere.
+  Il committente necessita di librerie utili per l’utilizzo dei robot LEGO
+  Mindstorm. Le librerie devono contenere metodi utili per ogni
+  sensore/attuatore. Queste librerie devono essere scritte in RobotC e
+  java. I metodi devono essere di facile utilizzo (user-friendly) e
+  dovranno essere compatibili con robot di diverse forme e dimensioni.
+  Per ogni attuatore/sensore sono disponibili più metodi che effettuano
+  azioni distinte. Queste librerie servono per aiutare gli allievi del
+  secondo anno durante la WRO.
 
 
   |ID  |REQ-012                                         |
@@ -183,7 +153,7 @@
   |**002**      | Si dovranno poter immettere nuovi allievi                 |
   |**003**      | Dovrà essere possibile la ricerca di allievi                   |
 
-  
+
 
 **Spiegazione elementi tabella dei requisiti:**
 
