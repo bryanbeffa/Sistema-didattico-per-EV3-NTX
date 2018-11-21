@@ -108,6 +108,69 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
   |**003**      | Dovrà essere possibile la ricerca di allievi                   |
 
 
+  |ID  |REQ-001                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore infrarosso Java |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-002                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore ultrasuono Java |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-003                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore di colore Java  |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-004                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore di tatto Java   |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-005                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore giroscopio Java |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-006                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore di luce Java|
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-007                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe motore principale Java |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
+
+  |ID  |REQ-008                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe motore secondario Java |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |                  |
+  |            |**Sotto requisiti** |
 
 **Spiegazione elementi tabella dei requisiti:**
 
