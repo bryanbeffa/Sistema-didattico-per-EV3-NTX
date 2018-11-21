@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Sistema didattico per lego Ev3/NTX" company="Forni &amp; Beffa" webLink="" view-date="2018-11-16" view-index="0" gantt-divider-location="567" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Sistema didattico per lego Ev3/NTX" company="Forni &amp; Beffa" webLink="" view-date="2018-11-15" view-index="0" gantt-divider-location="567" resource-divider-location="300" version="2.8.9" locale="it">
     <description><![CDATA[The project requirement is to create a java and a robotC library. In these libraries, we have to put some useful classes for the guys of the second years. These classes will be used for the WRO, so they will have some methods]]></description>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nome" width="349" order="0"/>
@@ -62,6 +62,7 @@
                 <task id="23" name="Termine progettazione" color="#8cb6ce" meeting="true" start="2018-12-12" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
+        <task id="27" name="Implementazione" meeting="false" start="2018-11-16" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Bryan Beffa" function="SoftwareDevelopment:2" contacts="bryan.beffa@samtrevano.ch" phone="+41798608288">
