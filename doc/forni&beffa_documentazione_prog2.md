@@ -96,111 +96,83 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
   azioni distinte. Queste librerie servono per aiutare gli allievi del
   secondo anno durante la WRO.
 
-
-  |ID  |REQ-012                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Creazione interfaccia |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    |Si necessitano i permessi di root / Dipende dal requisito REQ-001 (Creazione DB)|
-  |            |**Sotto requisiti** |
-  |**001**      | Si necessita una maschera di login  |
-  |**002**      | Si dovranno poter immettere nuovi allievi                 |
-  |**003**      | Dovrà essere possibile la ricerca di allievi                   |
-
-
   |ID  |REQ-001                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore infrarosso Java |
-  |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |                  |
-  |            |**Sotto requisiti** |
-
-  |ID  |REQ-002                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore ultrasuono Java |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore ultrasuono |
   |            |**Sotto requisiti** |
+  |**001**      |Metodo che permette al robot di seguire la linea del muro|
+  |**002**      |Metodo che si ferma ad una distanza passata come parametro dal muro|
+  |**003**      |Metodo che ritorna il tempo per percorrere la distanza misurata|
 
-  |ID  |REQ-003                                         |
+
+  |ID  |REQ-002                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di colore Java  |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di colore |
   |            |**Sotto requisiti** |
+  |**001**      |Metodo che fa arrestare il robot al rilevamento di un determinato colore|
+  |**002**      |Metodo che ritorna il nome del colore |
+  |**003**      |Metodo che che |
 
-  |ID  |REQ-004                                         |
+  |ID  |REQ-003                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di tatto Java   |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di tatto |
   |            |**Sotto requisiti** |
+  |**001**      |Metodo che ritorna se il sensore di tatto viene premuto|
+  |**002**      |Metodo che ritorna se entrambi i sensori sono stati premuti|
 
-  |ID  |REQ-005                                         |
+  |ID  |REQ-004                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore giroscopio Java |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore giroscopio|
   |            |**Sotto requisiti** |
+  |**001**      |Metodo|
+  |**002**      |Metodo |
+  |**003**      ||
 
-  |ID  |REQ-006                                         |
+  |ID  |REQ-005                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di luce Java|
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di luce |
   |            |**Sotto requisiti** |
+  |**001**      |Metodo che esegue il line follower ON/OFF|
+  |**002**      |Metodo che esegue il line follower con l'utilizzo del calcolo dell'errore|
+  |**003**      |Metodo che fa arrestare il robot al rilevamento del colore nero|
 
-  |ID  |REQ-007                                         |
+  |ID  |REQ-006                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe motore principale Java |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il motore principale |
   |            |**Sotto requisiti** |
+  |**001**      |Metodo che permette al robot di avanzare/arretrare di un certo numero di rotazioni|
+  |**002**      |Metodo che permette al robot di avanzare/arretrare per un determinato lasso di tempo  |
+  |**003**      |Metodo che ferma il robot|
+  |**004**      |Metodo che permette al robot di girarsi a destra o sinistra |
 
-  |ID  |REQ-008                                         |
+  |ID  |REQ-007                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe motore secondario Java |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |                  |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il motore secondario|
   |            |**Sotto requisiti** |
+  |**001**      |Metodo che fa azionare il motore per un certo numero di rotazioni|
+  |**002**      |Metodo che fa azionare il motore per un certo tempo|
 
-**Spiegazione elementi tabella dei requisiti:**
-
-**ID**: identificativo univoco del requisito
-
-**Nome**: breve descrizione del requisito
-
-**Priorità**: indica l’importanza di un requisito nell’insieme del
-progetto, definita assieme al committente. Ad esempio poter disporre di
-report con colonne di colori diversi ha priorità minore rispetto al
-fatto di avere un database con gli elementi al suo interno. Solitamente
-si definiscono al massimo di 2-3 livelli di priorità.
-
-**Versione**: indica la versione del requisito. Ogni modifica del
-requisito avrà una versione aggiornata.
-
-Sulla documentazione apparirà solamente l’ultima versione, mentre le
-vecchie dovranno essere inserite nei diari.
-
-**Note**: eventuali osservazioni importanti o riferimenti ad altri
-requisiti.
-
-**Sotto requisiti**: elementi che compongono il requisito.
-
-
-### Use case
-
-I casi d’uso rappresentano l’interazione tra i vari attori e le
-funzionalità del prodotto.
 
 ### Pianificazione
 
