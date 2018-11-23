@@ -198,16 +198,22 @@ in questo capitolo.
 
 ### Analisi dei mezzi
 
-Elencare e *descrivere* i mezzi disponibili per la realizzazione del
-progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
-modello di riferimento.
+#### Software
+I software che sono stati utilizzati sono i seguenti:
 
-SDK, librerie, tools utilizzati per la realizzazione del progetto e
-eventuali dipendenze.
+- Netbeans IDE 8.2
 
-Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
-particolare è coinvolto nel progetto? Che particolarità e limitazioni
-presenta? Che hw sarà disponibile durante lo sviluppo?
+#### Hardware
+In questo progetto è stato utilizzato il seguente hardware:
+- Portatili (specifiche tecniche nella media) con Windows 10
+- Robot Lego NXT brick
+- Robot Lego EV3 brick
+- Sesore di luce
+- Sensore ultrasuono
+- Sensore giroscopio
+- Sensore di tatto
+- Motore principale
+- Motore secondario
 
 ## Progettazione
 
