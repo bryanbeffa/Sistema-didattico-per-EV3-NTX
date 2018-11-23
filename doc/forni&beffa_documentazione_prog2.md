@@ -124,7 +124,6 @@ secondo anno durante la WRO.
   |            |**Sotto requisiti** |
   |**001**      |Metodo che fa arrestare il robot al rilevamento di un determinato colore|
   |**002**      |Metodo che ritorna il nome del colore |
-  |**003**      |Metodo che che |
 
   |ID  |REQ-003                                         |
   |----|------------------------------------------------|
@@ -145,7 +144,6 @@ secondo anno durante la WRO.
   |            |**Sotto requisiti** |
   |**001**      |Metodo|
   |**002**      |Metodo |
-  |**003**      ||
 
   |ID  |REQ-005                                         |
   |----|------------------------------------------------|
@@ -202,6 +200,7 @@ in questo capitolo.
 I software che sono stati utilizzati sono i seguenti:
 
 - Netbeans IDE 8.2
+- LEGO Mindstorm NXT
 
 #### Hardware
 In questo progetto è stato utilizzato il seguente hardware:
