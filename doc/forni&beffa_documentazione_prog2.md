@@ -73,7 +73,7 @@
 
 ### Scopo
 
-Lo scopo di questo progetto è quello di creare due librerie, una in RobotC e l'altra in Java, per aiutare gli allievi del secondo anno di informatica che parteciperanno alla gara di robotica WRO. Esse permetteranno di eseguire le operazioni basilari con i motori
+Lo scopo di questo progetto è quello di creare due librerie, una in RobotC e l'altra in Java sia per bricks EV3 sia per NXT, per aiutare gli allievi del secondo anno di informatica che parteciperanno alla gara di robotica WRO. Esse permetteranno di eseguire le operazioni basilari con i motori
 e con i seguenti sensori:
 
   - Sensore tattile
