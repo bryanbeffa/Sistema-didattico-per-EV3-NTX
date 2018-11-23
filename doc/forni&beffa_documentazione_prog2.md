@@ -113,7 +113,7 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
   |**Nome**    |Classe sensore di colore Java  |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di colore |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di colore  |
   |            |**Sotto requisiti** |
   |**001**      |Metodo che fa arrestare il robot al rilevamento di un determinato colore|
   |**002**      |Metodo che ritorna il nome del colore |
@@ -124,7 +124,7 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
   |**Nome**    |Classe sensore di tatto Java   |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di tatto |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di tatto   |
   |            |**Sotto requisiti** |
   |**001**      |Metodo che ritorna se il sensore di tatto viene premuto|
   |**002**      |Metodo che ritorna se entrambi i sensori sono stati premuti|
@@ -145,7 +145,7 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
   |**Nome**    |Classe sensore di luce Java|
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di luce |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di luce   |
   |            |**Sotto requisiti** |
   |**001**      |Metodo che esegue il line follower ON/OFF|
   |**002**      |Metodo che esegue il line follower con l'utilizzo del calcolo dell'errore|
@@ -168,7 +168,7 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
   |**Nome**    |Classe motore secondario Java |
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il motore secondario|
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il motore secondario |
   |            |**Sotto requisiti** |
   |**001**      |Metodo che fa azionare il motore per un certo numero di rotazioni|
   |**002**      |Metodo che fa azionare il motore per un certo tempo|
