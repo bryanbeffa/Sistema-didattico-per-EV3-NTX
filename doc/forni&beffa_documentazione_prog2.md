@@ -66,7 +66,7 @@
 
   > *The project requirement is to create a java and a robotC library.
   > In these libraries, we have to put some useful classes for the guys of
-  > the second years. These classes will be used for the WRO, so they will
+  > the second year. These classes will be used for the WRO, so they will
   > have some methods for every actuator and sensor. These libraries should be
   > universal and user-friendly, so the guys could use it in a
   > simple way for their interests.*
