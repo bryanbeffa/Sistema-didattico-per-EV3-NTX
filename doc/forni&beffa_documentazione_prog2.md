@@ -53,13 +53,14 @@
 
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
-  -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
+  -   Allievi: Matteo Forni e Bryan Beffa
 
-  -   scuola ,sezione, materia/e,
+  -   Docenti: Luca Muggiasca, Francesco Mussi, Adriano Barchi
 
-  -   date di inizio e termine di consegna,
+  -   SAM Trevano, Informatica, I3AA
 
-  -   …
+  -   14.11.2018 - 25.01.2018
+
 
 ### Abstract
 
