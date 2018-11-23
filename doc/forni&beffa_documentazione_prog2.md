@@ -192,10 +192,21 @@ in questo capitolo.
 ### Analisi dei mezzi
 
 #### Software
-I software che sono stati utilizzati sono i seguenti
+I software che sono stati utilizzati sono i seguenti:
+
+- Netbeans IDE 8.2
 
 #### Hardware
-
+In questo progetto è stato utilizzato il seguente hardware:
+- Portatili (specifiche tecniche nella media) con Windows 10
+- Robot Lego NXT brick
+- Robot Lego EV3 brick
+- Sesore di luce
+- Sensore ultrasuono
+- Sensore giroscopio
+- Sensore di tatto
+- Motore principale
+- Motore secondario
 
 ## Progettazione
 
