@@ -73,10 +73,17 @@
 
 ### Scopo
 
-  Lo scopo del progetto (scopi didattici/scopi operativi). Dovrebbe
-  descrivere il mandato, ma non vanno ricopiate le informazioni del
-  quaderno dei compiti (che va invece allegato).
+Lo scopo di questo progetto è quello di creare due librerie, una in RobotC e l'altra in Java, per aiutare gli allievi del secondo anno di informatica che parteciperanno alla gara di robotica WRO. Esse permetteranno di eseguire le operazioni basilari con i motori
+e con i seguenti sensori:
 
+  - Sensore tattile
+  - Sensore di luce
+  - Sensore di colore
+  - Giroscopio
+  - Sensore ad ultrasuoni
+
+Al termine della creazione delle librerie dovrà essere eseguito un test di performance
+per determinare quale tra le due librerie funziona meglio.
 
 ## Analisi
 
@@ -87,14 +94,14 @@ Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svol
 
 ### Analisi e specifica dei requisiti
 
-  Il committente necessita di librerie utili per l’utilizzo dei robot LEGO
-  Mindstorm. Le librerie devono contenere metodi utili per ogni
-  sensore/attuatore. Queste librerie devono essere scritte in RobotC e
-  java. I metodi devono essere di facile utilizzo (user-friendly) e
-  dovranno essere compatibili con robot di diverse forme e dimensioni.
-  Per ogni attuatore/sensore sono disponibili più metodi che effettuano
-  azioni distinte. Queste librerie servono per aiutare gli allievi del
-  secondo anno durante la WRO.
+Il committente necessita di librerie utili per l’utilizzo dei robot LEGO
+Mindstorm. Le librerie devono contenere metodi utili per ogni
+sensore/attuatore. Queste librerie devono essere scritte in RobotC e
+java. I metodi devono essere di facile utilizzo (user-friendly) e
+dovranno essere compatibili con robot di diverse forme e dimensioni.
+Per ogni attuatore/sensore sono disponibili più metodi che effettuano
+azioni distinte. Queste librerie servono per aiutare gli allievi del
+secondo anno durante la WRO.
 
   |ID  |REQ-001                                         |
   |----|------------------------------------------------|
