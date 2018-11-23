@@ -115,7 +115,7 @@ secondo anno durante la WRO.
   |**003**      |Metodo che ritorna il tempo per percorrere la distanza misurata|
 
 
-  |ID  |REQ-002                                         |
+  |ID  |REQ-02                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di colore Java  |
   |**Priorità**|1                              |
