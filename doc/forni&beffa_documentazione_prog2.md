@@ -191,16 +191,11 @@ in questo capitolo.
 
 ### Analisi dei mezzi
 
-Elencare e *descrivere* i mezzi disponibili per la realizzazione del
-progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
-modello di riferimento.
+#### Software
+I software che sono stati utilizzati sono i seguenti
 
-SDK, librerie, tools utilizzati per la realizzazione del progetto e
-eventuali dipendenze.
+#### Hardware
 
-Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
-particolare è coinvolto nel progetto? Che particolarità e limitazioni
-presenta? Che hw sarà disponibile durante lo sviluppo?
 
 ## Progettazione
 
