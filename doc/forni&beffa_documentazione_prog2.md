@@ -103,7 +103,7 @@ Per ogni attuatore/sensore sono disponibili più metodi che effettuano
 azioni distinte. Queste librerie servono per aiutare gli allievi del
 secondo anno durante la WRO.
 
-  |ID  |REQ-001                                         |
+  |ID  |REQ-01                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore ultrasuono Java |
   |**Priorità**|1                              |
@@ -125,7 +125,7 @@ secondo anno durante la WRO.
   |**001**      |Metodo che fa arrestare il robot al rilevamento di un determinato colore|
   |**002**      |Metodo che ritorna il nome del colore |
 
-  |ID  |REQ-003                                         |
+  |ID  |REQ-03                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di tatto Java   |
   |**Priorità**|1                              |
@@ -135,7 +135,7 @@ secondo anno durante la WRO.
   |**001**      |Metodo che ritorna se il sensore di tatto viene premuto|
   |**002**      |Metodo che ritorna se entrambi i sensori sono stati premuti|
 
-  |ID  |REQ-004                                         |
+  |ID  |REQ-04                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore giroscopio Java |
   |**Priorità**|1                              |
@@ -145,7 +145,7 @@ secondo anno durante la WRO.
   |**001**      |Metodo|
   |**002**      |Metodo |
 
-  |ID  |REQ-005                                         |
+  |ID  |REQ-05                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di luce Java|
   |**Priorità**|1                              |
@@ -156,7 +156,7 @@ secondo anno durante la WRO.
   |**002**      |Metodo che esegue il line follower con l'utilizzo del calcolo dell'errore|
   |**003**      |Metodo che fa arrestare il robot al rilevamento del colore nero|
 
-  |ID  |REQ-006                                         |
+  |ID  |REQ-06                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe motore principale Java |
   |**Priorità**|1                              |
@@ -168,7 +168,7 @@ secondo anno durante la WRO.
   |**003**      |Metodo che ferma il robot|
   |**004**      |Metodo che permette al robot di girarsi a destra o sinistra |
 
-  |ID  |REQ-007                                         |
+  |ID  |REQ-07                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe motore secondario Java |
   |**Priorità**|1                              |
@@ -201,6 +201,7 @@ I software che sono stati utilizzati sono i seguenti:
 
 - Netbeans IDE 8.2
 - LEGO Mindstorm NXT
+- Graphical RobotC
 
 #### Hardware
 In questo progetto è stato utilizzato il seguente hardware:
