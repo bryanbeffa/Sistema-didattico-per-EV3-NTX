@@ -3,7 +3,6 @@
   - [Informazioni sul progetto](#informazioni-sul-progetto)
 
   - [Abstract](#abstract)
-
   - [Scopo](#scopo)
 
 1. [Analisi](#analisi)
@@ -122,7 +121,7 @@ secondo anno durante la WRO.
   |**Versione**|1.0                            |
   |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di colore  |
   |            |**Sotto requisiti** |
-  |**001**      |Metodo che fa arrestare il robot al rilevamento di un determinato colore|
+  |**001**      |Metodo che ritorna true se rileva il colore scelto daall'utente|
   |**002**      |Metodo che ritorna il nome del colore |
 
   |ID  |REQ-03                                         |
@@ -210,7 +209,7 @@ In questo progetto è stato utilizzato il seguente hardware:
 - Robot Lego EV3 brick
 - Sesore di luce
 - Sensore ultrasuono
-- Sensore giroscopio
+- Sensore giroscopi
 - Sensore di tatto
 - Motore principale
 - Motore secondario
@@ -248,10 +247,8 @@ versione, mentre le vecchie saranno sui diari.
 
 ### Design delle interfacce
 
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
+In questo progetto non vi è richiesto di creare un interfaccia utente,
+ma solo delle librerie per EV3 e NXT.
 
 ### Design procedurale
 
