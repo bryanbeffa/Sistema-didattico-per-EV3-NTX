@@ -76,10 +76,10 @@ Lo scopo di questo progetto è quello di creare due librerie, una in RobotC e l'
 e con i seguenti sensori:
 
   - Sensore tattile
-  - Sensore di luce
-  - Sensore di colore
+  - Sensore di luce/colore
   - Giroscopio
   - Sensore ad ultrasuoni
+  - Sensore di suono
 
 Al termine della creazione delle librerie dovrà essere eseguito un test di performance
 per determinare quale tra le due librerie funziona meglio.
@@ -121,7 +121,7 @@ secondo anno durante la WRO.
   |**Versione**|1.0                            |
   |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di colore  |
   |            |**Sotto requisiti** |
-  |**001**      |Metodo che ritorna true se rileva il colore scelto daall'utente|
+  |**001**      |Metodo che ritorna true se rileva il colore scelto dall'utente|
   |**002**      |Metodo che ritorna il nome del colore |
 
   |ID  |REQ-03                                         |
@@ -177,6 +177,15 @@ secondo anno durante la WRO.
   |**001**      |Metodo che fa azionare il motore per un certo numero di rotazioni|
   |**002**      |Metodo che fa azionare il motore per un certo tempo|
 
+  |ID  |REQ-08                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Classe sensore di suono |
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di suono |
+  |            |**Sotto requisiti** |
+  |**001**      |Metodo che fa muovere il robot in base al volume rilevato|
+  |**002**      |Metodo che ritorna la percentale del volume|
 
 ### Pianificazione
 
