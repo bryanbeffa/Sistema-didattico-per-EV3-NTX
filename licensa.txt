@@ -1,0 +1,6 @@
+Programmi:
+
+EV3 robotC line follower proporzionale 3 sensori (2 x luce 1 x distance) -> mentre segue la linea ad una determinata distanza da un oggetto aziona il motore 
+
+id: 63767870
+password: 43583RQ3
