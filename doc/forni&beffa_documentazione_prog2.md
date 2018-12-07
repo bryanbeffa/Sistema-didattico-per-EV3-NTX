@@ -3,6 +3,7 @@
   - [Informazioni sul progetto](#informazioni-sul-progetto)
 
   - [Abstract](#abstract)
+
   - [Scopo](#scopo)
 
 1. [Analisi](#analisi)
@@ -49,8 +50,6 @@
 ## Introduzione
 
 ### Informazioni sul progetto
-
-  In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
   -   Allievi: Matteo Forni e Bryan Beffa
 
@@ -209,7 +208,7 @@ I software che sono stati utilizzati sono i seguenti:
 
 - Netbeans IDE 8.2
 - LEGO Mindstorm NXT
-- Graphical RobotC
+- RobotC IDE
 
 #### Hardware
 In questo progetto è stato utilizzato il seguente hardware:
