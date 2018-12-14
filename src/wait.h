@@ -5,33 +5,33 @@ void waitTouch(int port){
 		}
 	}
 }
-void waitLight(int port, int threshold){
+void waitLight(tSensors port, int threshold){
+	while(true){
+		if(SensorValue(port) < threshold){
+			break;
+		}
+	}
+}
+void waitDistance(tSensors port, int distance){
+	while(true){
+		if(SensorValue(port) >= distance){
+			break;
+		}
+	}
+}
+void waitSound(int port, int threshold){
 	while(true){
 		if(SensorValue[port] >= threshold){
 			break;
 		}
 	}
 }
-bool waitDistance(int port, int distance){
-	while(true){
-		if(SensorValue[port] <= distance){
-			break;
-		}
-	}
-}
-bool waitSound(int port, int threshold){
-	while(true){
-		if(SensorValue[port] >= threshold){
-			break;
-		}
-	}
-}
-bool waitTime(int port, long millis){
+void waitTime(int port, long millis){
 
 }
-bool waitRotations(int port, int times){
+void waitRotations(int port, int times){
 
 }
-bool waitDegrees(int port, int degree){
+void waitDegrees(int port, int degree){
 
 }
