@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Sistema didattico per lego Ev3/NTX" company="Forni &amp; Beffa" webLink="" view-date="2018-11-01" view-index="0" gantt-divider-location="567" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Sistema didattico per lego Ev3/NTX" company="Forni &amp; Beffa" webLink="" view-date="2018-11-07" view-index="0" gantt-divider-location="567" resource-divider-location="300" version="2.8.9" locale="it">
     <description><![CDATA[The project requirement is to create a java and a robotC library. In these libraries, we have to put some useful classes for the guys of the second years. These classes will be used for the WRO, so they will have some methods]]></description>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="339" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="106" order="1"/>
-        <field id="tpd5" name="Data di fine" width="103" order="2"/>
+        <field id="tpd3" name="Nome" width="344" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="111" order="1"/>
+        <field id="tpd5" name="Data di fine" width="108" order="2"/>
         <option id="taskLabelUp" value="taskDates"/>
         <option id="taskLabelLeft" value="name"/>
         <timeline><![CDATA[7]]></timeline>
@@ -47,72 +47,46 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Sistema didattico Ev3/NTX" color="#8cb6ce" meeting="false" start="2018-11-14" duration="20" complete="3" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
-            <task id="4" name="Analisi e progettazione" color="#8cb6ce" meeting="false" start="2018-11-14" duration="7" complete="35" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
+        <task id="0" name="Sistema didattico Ev3/NTX" color="#8cb6ce" meeting="false" start="2018-11-14" duration="20" complete="11" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
+            <task id="4" name="Analisi e progettazione" color="#8cb6ce" meeting="false" start="2018-11-14" duration="7" complete="87" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                 <task id="6" name="Lettura e discussione QdC" color="#8cb6ce" meeting="false" start="2018-11-14" duration="1" complete="100" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                     <depend id="7" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="7" name="Analisi del dominio e dei requisiti" color="#8cb6ce" meeting="false" start="2018-11-16" duration="3" complete="60" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
+                <task id="7" name="Analisi del dominio e dei requisiti" color="#8cb6ce" meeting="false" start="2018-11-16" duration="3" complete="100" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                     <depend id="14" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="14" name="Pianificazione struttura librerie/classi" color="#8cb6ce" meeting="false" start="2018-11-28" duration="2" complete="0" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
+                <task id="14" name="Pianificazione struttura librerie/classi" color="#8cb6ce" meeting="false" start="2018-11-28" duration="2" complete="100" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                     <depend id="18" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="18" name="Training RobotC" color="#8cb6ce" meeting="false" start="2018-12-05" duration="1" complete="0" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
+                <task id="18" name="Training RobotC" color="#8cb6ce" meeting="false" start="2018-12-05" duration="1" complete="100" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                     <depend id="23" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="23" name="Termine progettazione" color="#8cb6ce" meeting="true" start="2018-12-07" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="27" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
-            <task id="27" name="Implementazione" color="#000000" meeting="false" start="2018-12-07" duration="12" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                <task id="28" name="Sviluppo classe sensore tattile in Java" color="#8cb6ce" meeting="false" start="2018-12-07" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                    <depend id="31" type="2" difference="0" hardness="Strong"/>
-                    <depend id="32" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="30" name="Sviluppo classe sensore luce in Java" color="#8cb6ce" meeting="false" start="2018-12-07" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                    <depend id="31" type="2" difference="0" hardness="Strong"/>
-                    <depend id="32" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="31" name="Sviluppo classe sensore colore in Java" color="#8cb6ce" meeting="false" start="2018-12-14" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                    <depend id="33" type="2" difference="0" hardness="Strong"/>
-                    <depend id="34" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="32" name="Sviluppo classe sensore ultrasuoni in Java" color="#8cb6ce" meeting="false" start="2018-12-14" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                    <depend id="33" type="2" difference="0" hardness="Strong"/>
-                    <depend id="34" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="33" name="Sviluppo classe sensore giroscopio in Java" color="#8cb6ce" meeting="false" start="2018-12-21" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                    <depend id="47" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="34" name="Sviluppo classe motori in Java" color="#8cb6ce" meeting="false" start="2018-12-21" duration="2" complete="0" thirdDate="2018-12-12" thirdDate-constraint="0" expand="true">
-                    <depend id="47" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="47" name="Termine sviluppo in Java" color="#8cb6ce" meeting="true" start="2019-01-04" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
-                    <depend id="36" type="2" difference="0" hardness="Strong"/>
-                    <depend id="38" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="36" name="Sviluppo classe sensore tattile in RobotC" color="#8cb6ce" meeting="false" start="2019-01-04" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+            <task id="27" name="Implementazione" color="#000000" meeting="false" start="2018-12-12" duration="7" complete="8" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="36" name="Sviluppo classe sensore tattile in RobotC" color="#8cb6ce" meeting="false" start="2018-12-12" duration="1" complete="100" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="40" type="2" difference="0" hardness="Strong"/>
                     <depend id="42" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="38" name="Sviluppo classe sensore luce in RobotC" color="#8cb6ce" meeting="false" start="2019-01-04" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="38" name="Sviluppo classe sensore luce in RobotC" color="#8cb6ce" meeting="false" start="2018-12-14" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="40" type="2" difference="0" hardness="Strong"/>
                     <depend id="42" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="40" name="Sviluppo classe sensore colore in RobotC" color="#8cb6ce" meeting="false" start="2019-01-11" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="40" name="Sviluppo classe sensore colore in RobotC" color="#8cb6ce" meeting="false" start="2018-12-21" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="44" type="2" difference="0" hardness="Strong"/>
                     <depend id="46" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="42" name="Sviluppo classe sensore ultrasuoni in RobotC" color="#8cb6ce" meeting="false" start="2019-01-11" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="42" name="Sviluppo classe sensore ultrasuoni in RobotC" color="#8cb6ce" meeting="false" start="2018-12-21" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="44" type="2" difference="0" hardness="Strong"/>
                     <depend id="46" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="44" name="Sviluppo classe sensore giroscopio in RobotC" color="#8cb6ce" meeting="false" start="2019-01-18" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true"/>
-                <task id="46" name="Sviluppo classe motori in RobotC" color="#8cb6ce" meeting="false" start="2019-01-18" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="44" name="Sviluppo classe sensore giroscopio in RobotC" color="#8cb6ce" meeting="false" start="2019-01-04" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true"/>
+                <task id="46" name="Sviluppo classe motori in RobotC" color="#8cb6ce" meeting="false" start="2019-01-04" duration="2" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="50" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="50" name="Termine sviluppo in RobotC" color="#8cb6ce" meeting="true" start="2019-01-25" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="50" name="Termine sviluppo in RobotC" color="#8cb6ce" meeting="true" start="2019-01-11" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="104" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
@@ -141,9 +115,6 @@
         <allocation task-id="14" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="18" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="23" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
-        <allocation task-id="30" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
-        <allocation task-id="32" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
-        <allocation task-id="34" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="46" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="42" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="38" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
@@ -158,9 +129,6 @@
         <allocation task-id="14" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="18" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="23" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
-        <allocation task-id="28" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
-        <allocation task-id="31" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
-        <allocation task-id="33" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="36" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="44" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="256" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
