@@ -5,8 +5,8 @@
 #include "wait.h"
 task main()
 {
-	//motor[0] = 100;
 
-	while(true){writeDebugStreamLine("%d", SensorValue(sonar));wait(1);}
+	waitRotations(0, 10, 30);
+	//while(true){writeDebugStreamLine("%d", SensorValue(sonar));wait(1);}
 	//waitDistance(sonar, 15);
 }
