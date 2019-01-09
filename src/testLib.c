@@ -10,7 +10,7 @@ task main()
 	//while(true){writeDebugStreamLine("%d", SensorValue(luce));wait(1);}
 	motor[motorA] = 50;
 	waitLight(luce, 50, true);
-	motor[motorA] = 10;
+	motor[motorA] = -10;
 	waitLight(luce, 50, false);
 
 }

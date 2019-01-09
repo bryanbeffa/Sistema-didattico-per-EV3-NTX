@@ -105,86 +105,68 @@ secondo anno durante la WRO.
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore ultrasuono Java |
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore ultrasuono |
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo che permette al robot di seguire la linea del muro|
-  |**002**      |Metodo che si ferma ad una distanza passata come parametro dal muro|
-  |**003**      |Metodo che ritorna il tempo per percorrere la distanza misurata|
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato. |
 
 
   |ID  |REQ-02                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di colore Java  |
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di colore  |
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo che ritorna true se rileva il colore scelto dall'utente|
-  |**002**      |Metodo che ritorna il nome del colore |
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato.  |
 
   |ID  |REQ-03                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di tatto Java   |
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di tatto   |
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo che ritorna se il sensore di tatto viene premuto|
-  |**002**      |Metodo che ritorna se entrambi i sensori sono stati premuti|
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato.   ||
 
   |ID  |REQ-04                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore giroscopio Java |
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore giroscopio|
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo|
-  |**002**      |Metodo |
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato.|
 
   |ID  |REQ-05                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di luce Java|
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di luce   |
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo che esegue il line follower ON/OFF|
-  |**002**      |Metodo che esegue il line follower con l'utilizzo del calcolo dell'errore|
-  |**003**      |Metodo che fa arrestare il robot al rilevamento del colore nero|
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato. |
 
   |ID  |REQ-06                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe motore principale Java |
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il motore principale |
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo che permette al robot di avanzare/arretrare di un certo numero di rotazioni|
-  |**002**      |Metodo che permette al robot di avanzare/arretrare per un determinato lasso di tempo  |
-  |**003**      |Metodo che ferma il robot|
-  |**004**      |Metodo che permette al robot di girarsi a destra o sinistra |
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato. |
 
   |ID  |REQ-07                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe motore secondario Java |
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il motore secondario |
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo che fa azionare il motore per un certo numero di rotazioni|
-  |**002**      |Metodo che fa azionare il motore per un certo tempo|
+  |**Versione**|2.0                            |
+  |**Note**    |Il requisito è stato eliminato. |
 
   |ID  |REQ-08                                         |
   |----|------------------------------------------------|
-  |**Nome**    |Classe sensore di suono |
+  |**Nome**    |Classe sensore di suono Java|
   |**Priorità**|1                              |
   |**Versione**|1.0                            |
-  |**Note**    |Si necessita di una classe che contenga metodi utili per l'utilizzo del robot con il sensore di suono |
+  |**Note**    |Il requisito è stato eliminato.|
+
+  |ID  |REQ-09                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Libreria wait|
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |Libreria che riporta i metodi del blocchetto wait del linguaggio visivo di NXT.|
   |            |**Sotto requisiti** |
-  |**001**      |Metodo che fa muovere il robot in base al volume rilevato|
-  |**002**      |Metodo che ritorna la percentale del volume|
+  |**001**      |...|
+  |**002**      |...|
 
 ### Pianificazione
 
