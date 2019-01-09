@@ -53,7 +53,7 @@
 
   -   Allievi: Matteo Forni e Bryan Beffa
 
-  -   Docenti: Luca Muggiasca, Francesco Mussi, Adriano Barchi
+  -   Docenti: Luca Muggiasca, Francesco Mussi, Adriano Barchi, Massimo Sartori
 
   -   SAM Trevano, Informatica, I3AA
 
@@ -384,17 +384,15 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 ### Sitografia
 
-1.  URL del sito (se troppo lungo solo dominio, evt completo nel
-    diario),
+-   http://www.robotc.net/forums/viewtopic.php?f=1&t=19568, *RobotC Forum*, 21.11.2018.
 
-2.  Eventuale titolo della pagina (in italico),
+-   https://www.dexterindustries.com/howto/using-debugger-stream-in-robotc-for-lego/, *RobotC debug stream*, 30.11.2018
 
-3.  Data di consultazione (GG-MM-AAAA).
+-   http://www.robotc.net/forums/viewtopic.php?f=1&t=7556, *RobotC buttons handling*, 12.12.2018.
 
-**Esempio:**
+-   http://www.robotc.net/wikiarchive/NXT_Functions_Display, *RobotC display functions Manual*, 17.12.2018.
 
--   http://standards.ieee.org/guides/style/section7.html, *IEEE
-    Standards Style Manual*, 07-06-2008.
+-   http://www.robotc.net/forums/viewtopic.php?f=52&t=5916, *RobotC pragma manual*, 19.12.2018.
 
 ## Allegati
 

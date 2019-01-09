@@ -40,7 +40,7 @@ void waitLight(tSensors port, int threshold){
 void waitDistance(tSensors port, int distance){
 	bool flag = true;
 
-	while(true){
+	while(flag){
 		//controllo che il valore letto non sia inferiore alla soglia minima
 		if(SensorValue(port) >= distance){
 			flag = !flag;
