@@ -4,11 +4,11 @@
  * @param port porta a cui è collegato il sensore di tatto
  */
 void waitTouch(int port){
-	bool isPressed = true;
+	bool isPressed = false;
 
-	while(isPressed){
+	while(!isPressed){
 		//controllo se il sensore è stato premuto
-		if(SensorValue[port] < 500){
+		if(SensorValue[port] > 0){
 			isPressed = !isPressed;
 		}
 	}
