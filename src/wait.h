@@ -19,14 +19,21 @@ void waitTouch(int port){
  *
  * @param port porta a cui è collegato il sensore di luce
  * @param threshold soglia di luce minima
+ * @param higher valore booleano che determina se bisognerà attendere un valore superiore o inferiore alla soglia.
  */
-void waitLight(tSensors port, int threshold){
+void waitLight(tSensors port, int threshold, bool higher){
 	bool flag = true;
 
 	while(flag){
 		//controllo che il valore letto del sensore non sia sotto la soglia minima
-		if(SensorValue(port) < threshold){
-			flag = !flag;
+		if(higher){
+			if(SensorValue(port) > threshold){
+				flag = !flag;
+			}
+		}else{
+			if(SensorValue(port) < threshold){
+				flag = !flag;
+			}
 		}
 	}
 }

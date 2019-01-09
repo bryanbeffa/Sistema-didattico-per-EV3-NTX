@@ -7,7 +7,10 @@ task main()
 {
 
 	//waitRotations(0, 10, 30);
-	//while(true){writeDebugStreamLine("%d", SensorValue(sonar));wait(1);}
+	//while(true){writeDebugStreamLine("%d", SensorValue(luce));wait(1);}
 	motor[motorA] = 50;
-	waitDistance(distanza, 15);
+	waitLight(luce, 50, true);
+	motor[motorA] = 10;
+	waitLight(luce, 50, false);
+
 }
