@@ -155,7 +155,7 @@ secondo anno durante la WRO.
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di suono Java|
   |**Priorità**|1                              |
-  |**Versione**|1.0                            |
+  |**Versione**|2.0                            |
   |**Note**    |Il requisito è stato eliminato.|
 
   |ID  |REQ-09                                         |
@@ -165,17 +165,31 @@ secondo anno durante la WRO.
   |**Versione**|1.0                            |
   |**Note**    |Libreria che riporta i metodi del blocchetto wait del linguaggio visivo di NXT.|
   |            |**Sotto requisiti** |
-  |**001**      |...|
-  |**002**      |...|
+  |**001**      |Metodo di attesa del suono.|
+  |**002**      |Metodo di attesa della distanza rilevata con l'ultrasuoni.|
+  |**003**      |Metodo di attesa del tocco.|
+  |**004**      |Metodo di attesa della luce.|
+  |**005**      |Metodo di attesa di un lasso di tempo.|
+  |**006**      |Metodo di attesa del movimento in rotazioni dei motori.|
+  |**007**      |Metodo di attesa del movimento in gradi dei motori.|
+
+  |ID  |REQ-10                                         |
+  |----|------------------------------------------------|
+  |**Nome**    |Progetto di dimostrazione e test|
+  |**Priorità**|1                              |
+  |**Versione**|1.0                            |
+  |**Note**    |Mini progetto che dimostra l'uso della libreria e ne testa il funzionamento.|
+  |            |**Sotto requisiti** |
+  |**001**      |Line follower percentuale.|
+  |**002**      |Controllo della presenza di oggetti davanti a se.|
+
 
 ### Pianificazione
 
-Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
-del modello di sviluppo che si intende adottare. In questa sezione
-bisognerà inserire il modello concettuale di sviluppo che si seguirà
-durante il progetto. Gli elementi di riferimento per una buona
-pianificazione derivano da una scomposizione top-down della problematica
-del progetto.
+Durante dei colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
+Qui di seguito si può vedere il Gantt iniziale pensato prima di sapere della modifica del progetto, nell'immagine si nota come era stato pensato di suddividere i metodi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
+
+![Gantt iniziale](img/GanttIniziale.png)
 
 La pianificazione può essere rappresentata mediante un diagramma di
 Gantt.
