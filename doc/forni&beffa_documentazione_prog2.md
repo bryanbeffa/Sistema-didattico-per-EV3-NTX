@@ -186,23 +186,16 @@ secondo anno durante la WRO.
 
 ### Pianificazione
 
-Durante dei colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
+Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
 Qui di seguito si può vedere il Gantt iniziale pensato prima di sapere della modifica del progetto, nell'immagine si nota come era stato pensato di suddividere i metodi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
 
 ![Gantt iniziale](img/GanttIniziale.png)
-
-La pianificazione può essere rappresentata mediante un diagramma di
-Gantt.
-
-Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
-in questo capitolo.
 
 ### Analisi dei mezzi
 
 #### Software
 I software che sono stati utilizzati sono i seguenti:
 
-- Netbeans IDE 8.2
 - LEGO Mindstorm NXT
 - RobotC IDE
 
@@ -210,10 +203,8 @@ I software che sono stati utilizzati sono i seguenti:
 In questo progetto è stato utilizzato il seguente hardware:
 - Portatili (specifiche tecniche nella media) con Windows 10
 - Robot Lego NXT brick
-- Robot Lego EV3 brick
 - Sesore di luce
 - Sensore ultrasuono
-- Sensore giroscopi
 - Sensore di tatto
 - Motore principale
 - Motore secondario
