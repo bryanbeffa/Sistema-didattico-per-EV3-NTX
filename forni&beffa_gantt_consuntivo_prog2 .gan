@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Sistema didattico per lego Ev3/NTX" company="Forni &amp; Beffa" webLink="" view-date="2018-11-03" view-index="0" gantt-divider-location="567" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Sistema didattico per lego Ev3/NTX" company="Forni &amp; Beffa" webLink="" view-date="2018-11-01" view-index="0" gantt-divider-location="567" resource-divider-location="300" version="2.8.9" locale="it">
     <description><![CDATA[The project requirement is to create a java and a robotC library. In these libraries, we have to put some useful classes for the guys of the second years. These classes will be used for the WRO, so they will have some methods]]></description>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nome" width="344" order="0"/>
@@ -47,7 +47,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Sistema didattico Ev3/NTX" color="#8cb6ce" meeting="false" start="2018-11-14" duration="22" complete="48" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
+        <task id="0" name="Sistema didattico Ev3/NTX" color="#8cb6ce" meeting="false" start="2018-11-14" duration="22" complete="49" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
             <task id="4" name="Analisi e progettazione" color="#8cb6ce" meeting="false" start="2018-11-14" duration="8" complete="88" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                 <task id="6" name="Lettura e discussione QdC" color="#8cb6ce" meeting="false" start="2018-11-14" duration="1" complete="100" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true">
                     <depend id="7" type="2" difference="0" hardness="Strong"/>
@@ -69,7 +69,7 @@
                     <depend id="303" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
-            <task id="27" name="Implementazione" color="#000000" meeting="false" start="2018-12-12" duration="7" complete="80" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+            <task id="27" name="Implementazione" color="#000000" meeting="false" start="2018-12-12" duration="9" complete="82" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                 <task id="36" name="Sviluppo libreria sensore tattile in RobotC" color="#8cb6ce" meeting="false" start="2018-12-12" duration="2" complete="100" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true"/>
                 <task id="42" name="Sviluppo libreria sensore ultrasuoni in RobotC" color="#8cb6ce" meeting="false" start="2018-12-12" duration="2" complete="100" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="303" type="2" difference="0" hardness="Strong"/>
@@ -83,10 +83,20 @@
                 <task id="44" name="Sviluppo libreria sensore giroscopio in RobotC" color="#8cb6ce" meeting="false" start="2018-12-28" duration="1" complete="100" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="305" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="305" name="Manutenzione metodi" color="#8cb6ce" meeting="false" start="2019-01-04" duration="2" complete="50" thirdDate="2018-11-09" thirdDate-constraint="0" expand="true"/>
-                <task id="50" name="Termine sviluppo in RobotC" color="#8cb6ce" meeting="true" start="2019-01-11" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
+                <task id="305" name="Manutenzione metodi" color="#8cb6ce" meeting="false" start="2019-01-04" duration="2" complete="100" thirdDate="2018-11-09" thirdDate-constraint="0" expand="true">
+                    <depend id="306" type="2" difference="0" hardness="Strong"/>
+                    <depend id="309" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="50" name="Termine sviluppo libreria in RobotC" color="#8cb6ce" meeting="true" start="2019-01-11" duration="0" complete="0" thirdDate="2018-11-16" thirdDate-constraint="0" expand="true">
                     <depend id="104" type="2" difference="0" hardness="Strong"/>
                 </task>
+                <task id="306" name="Sviluppo programma LineFollower" color="#8cb6ce" meeting="false" start="2019-01-11" duration="1" complete="75" thirdDate="2019-01-11" thirdDate-constraint="0" expand="true">
+                    <depend id="313" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="309" name="Costruzione prototipo robot" color="#8cb6ce" meeting="false" start="2019-01-11" duration="1" complete="100" thirdDate="2019-01-11" thirdDate-constraint="0" expand="true">
+                    <depend id="313" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="313" name="Test LineFollower e manutenzione" color="#8cb6ce" meeting="false" start="2019-01-16" duration="1" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="104" name="Test" color="#8cb6ce" meeting="false" start="2019-02-01" duration="1" complete="0" thirdDate="2018-12-12" thirdDate-constraint="0" expand="true">
                 <task id="256" name="Test classi in RobotC" color="#8cb6ce" meeting="false" start="2019-02-01" duration="1" complete="0" thirdDate="2019-01-11" thirdDate-constraint="0" expand="true"/>
@@ -116,6 +126,8 @@
         <allocation task-id="40" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="265" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="267" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="306" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="313" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="4" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="6" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
@@ -129,6 +141,8 @@
         <allocation task-id="265" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
         <allocation task-id="267" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
         <allocation task-id="303" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="309" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="313" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
     </allocations>
     <vacations/>
     <previous/>
