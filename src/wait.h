@@ -21,7 +21,7 @@ void waitTouch(int port){
  * @param threshold soglia di luce minima
  * @param higher valore booleano che determina se bisognerà attendere un valore superiore o inferiore alla soglia.
  */
-void waitLight(tSensors port, int threshold, bool higher){
+void waitLight(int port, int threshold, bool higher){
 	bool flag = true;
 
 	while(flag){
@@ -44,12 +44,12 @@ void waitLight(tSensors port, int threshold, bool higher){
  * @param port porta a cui è collegato il sensore infrarosso
  * @param distance distanza minima da un oggetto
  */
-void waitDistance(tSensors port, int distance){
+void waitDistance(int port, int distance){
 	bool flag = true;
 
 	while(flag){
 		//controllo che il valore letto non sia inferiore alla soglia minima
-		if(SensorValue(port) >= distance){
+		if(SensorValue(port) <= distance){
 			flag = !flag;
 		}
 	}
