@@ -14,7 +14,7 @@
  */
 task main()
 {
-	while(){
+	while(waitDistance(distance, 20)){
 		//margine consentito
 		double margin = 0.7;
 
