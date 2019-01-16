@@ -54,6 +54,7 @@ bool waitDistance(int port, int distance){
 			flag = !flag;
 			return flag;
 		}
+		return true;
 	}
 }
 

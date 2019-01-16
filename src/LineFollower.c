@@ -37,7 +37,7 @@ task main()
     }
 	}
 
-	while(true){
+	while(waitDistance(distance, 20)){
 		//margine consentito
 		double margin = 1.5;
 
@@ -53,8 +53,8 @@ task main()
 		double speedB = errorB * margin;
 
 		//setto la velocità al motore collegato alla porta A e alla porta B
-		motor[motorB] = speedB+15;
-		motor[motorA] = speedA-15;
+		motor[motorB] = speedB+30;
+		motor[motorA] = speedA+30;
 		waitTime(10);
 	}
 }
