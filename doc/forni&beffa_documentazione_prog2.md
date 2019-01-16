@@ -57,7 +57,7 @@
 
   -   SAM Trevano, Informatica, I3AA
 
-  -   14.11.2018 - 25.01.2018
+  -   14.11.2018 - 01.02.2018
 
 
 ### Abstract
@@ -186,8 +186,7 @@ secondo anno durante la WRO.
 
 ### Pianificazione
 
-Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
-Qui di seguito si può vedere il Gantt iniziale pensato prima di sapere della modifica del progetto, nell'immagine si nota come era stato pensato di suddividere i metodi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
+Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era stato pensato di suddividere i metodi di entrambi i linguaggi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
 
 ![Gantt iniziale](img/GanttIniziale.png)
 
@@ -215,6 +214,8 @@ Questo capitolo descrive esaustivamente come deve essere realizzato il
 prodotto fin nei suoi dettagli. Una buona progettazione permette
 all’esecutore di evitare fraintendimenti e imprecisioni
 nell’implementazione del prodotto.
+
+Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
 
 ### Design dell’architettura del sistema
 
