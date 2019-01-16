@@ -14,24 +14,47 @@
  */
 task main()
 {
+	int white;
+	int black;
+	bool button = false;
+	while(!button)
+  {
+    if (nNxtButtonPressed == 1)
+    {
+      white = (SensorValue[lightA]+SensorValue[lightB])/2;
+      writeDebugStreamLine("bianco: %d", white);
+      button = true;
+    }
+	}
+	button = false;
+	while (!button)
+  {
+    if (nNxtButtonPressed == 2)
+    {
+      black = (SensorValue[lightA]+SensorValue[lightB])/2;
+      writeDebugStreamLine("nero: %d", black);
+      button = true;
+    }
+	}
+
 	while(waitDistance(distance, 20)){
 		//margine consentito
-		double margin = 0.7;
+		double margin = 1.5;
 
 		//soglia di luce riflessa
 		int threshold = 50;
 
 		//calcolo l'errore
-		int errorA = threshold - SensorValue(lightA);
-		int errorB = threshold - SensorValue(lightB);
+		int errorA = SensorValue[lightA] - (white+black)/2;
+		int errorB = SensorValue[lightB] - (white+black)/2;
 
 		//calcolo la velocità
 		double speedA = errorA * margin;
 		double speedB = errorB * margin;
 
 		//setto la velocità al motore collegato alla porta A e alla porta B
-		motor[motorA] = speedA;
-		motor[motorB] = speedB;
-		waitTime(100);
+		motor[motorB] = speedB+30;
+		motor[motorA] = speedA+30;
+		waitTime(10);
 	}
 }
