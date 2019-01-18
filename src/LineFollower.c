@@ -12,28 +12,72 @@
  * @author Matteo Forni
  * @version 11.01.2019
  */
-task main()
+
+int setWhite()
 {
 	int white;
-	int black;
-	bool button = false;
-	while(!button)
+	while(true)
   {
+  	//stampo sul display
+  	nxtDisplayCenteredTextLine(1, "Premi la freccia");
+  	nxtDisplayCenteredTextLine(2, "destra per");
+  	nxtDisplayCenteredTextLine(3, "selezionare");
+  	nxtDisplayCenteredTextLine(4, "il colore bianco");
+
+  	//premere il tasto destro per selezionare il colore bianco
     if (nNxtButtonPressed == 1)
     {
       white = (SensorValue[lightA]+SensorValue[lightB])/2;
       writeDebugStreamLine("bianco: %d", white);
-      button = true;
+      return white;
     }
 	}
-	button = false;
-	while (!button)
+}
+
+int setBlack()
+{
+	int black;
+	while (true)
   {
+  	//stampo sul display
+  	nxtDisplayCenteredTextLine(1, "Premi la freccia");
+  	nxtDisplayCenteredTextLine(2, "sinistra per");
+  	nxtDisplayCenteredTextLine(3, "selezionare");
+  	nxtDisplayCenteredTextLine(4, "il colore nero");
+
+  	//premere il tasto sinistra per selezionare il colore nero
     if (nNxtButtonPressed == 2)
     {
       black = (SensorValue[lightA]+SensorValue[lightB])/2;
-      writeDebugStreamLine("nero: %d", black);
-      button = true;
+      return black;
+    }
+	}
+}
+
+task main()
+{
+	int white;
+	int black;
+
+	//setto il bianco e il nero
+	white = setWhite();
+	black = setBlack();
+
+
+	bool startProgram = true;
+	while(startProgram)
+	{
+		//stampo sul display
+  	nxtDisplayCenteredTextLine(1, "Premi il bottone");
+  	nxtDisplayCenteredTextLine(2, "centrale per");
+  	nxtDisplayCenteredTextLine(3, "iniziare il ");
+  	nxtDisplayCenteredTextLine(4, "line follower");
+
+		//premere il tasto al centro per iniziare il line follower
+    if (nNxtButtonPressed == 3)
+    {
+    	eraseDisplay();
+    	break;
     }
 	}
 
@@ -53,8 +97,14 @@ task main()
 		double speedB = errorB * margin;
 
 		//setto la velocità al motore collegato alla porta A e alla porta B
-		motor[motorB] = speedB+30;
-		motor[motorA] = speedA+30;
+		motor[motorB] = speedB+10;
+		motor[motorA] = speedA+10;
 		waitTime(10);
 	}
+
+	motor[motorB] = 0;
+	motor[motorA] = 0;
+
+	//muovo il motore secondario
+	waitDegrees(motorC, 160, -20);
 }
