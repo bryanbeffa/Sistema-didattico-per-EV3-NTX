@@ -19,6 +19,13 @@ task main()
 	bool button = false;
 	while(!button)
   {
+  	//stampo sul display
+  	nxtDisplayCenteredTextLine(1, "Premi la freccia");
+  	nxtDisplayCenteredTextLine(2, "destra per");
+  	nxtDisplayCenteredTextLine(3, "selezionare");
+  	nxtDisplayCenteredTextLine(4, "il colore bianco");
+
+  	//premere il tasto destro per selezionare il colore bianco
     if (nNxtButtonPressed == 1)
     {
       white = (SensorValue[lightA]+SensorValue[lightB])/2;
@@ -29,10 +36,32 @@ task main()
 	button = false;
 	while (!button)
   {
+  	//stampo sul display
+  	nxtDisplayCenteredTextLine(1, "Premi la freccia");
+  	nxtDisplayCenteredTextLine(2, "sinistra per");
+  	nxtDisplayCenteredTextLine(3, "selezionare");
+  	nxtDisplayCenteredTextLine(4, "il colore nero");
+
+  	//premere il tasto sinistra per selezionare il colore nero
     if (nNxtButtonPressed == 2)
     {
       black = (SensorValue[lightA]+SensorValue[lightB])/2;
-      writeDebugStreamLine("nero: %d", black);
+      button = true;
+    }
+	}
+
+	button = false;
+	while(!button)
+	{
+		//stampo sul display
+  	nxtDisplayCenteredTextLine(1, "Premi il bottone");
+  	nxtDisplayCenteredTextLine(2, "centrale per");
+  	nxtDisplayCenteredTextLine(3, "iniziare il ");
+  	nxtDisplayCenteredTextLine(4, "line follower");
+
+		//premere il tasto al centro per iniziare il line follower
+    if (nNxtButtonPressed == 3)
+    {
       button = true;
     }
 	}
@@ -57,4 +86,10 @@ task main()
 		motor[motorA] = speedA+30;
 		waitTime(10);
 	}
+
+	motor[motorB] = 0;
+	motor[motorA] = 0;
+
+	//muovo il motore secondario
+	waitDegrees(motorC, 120, 20);
 }
