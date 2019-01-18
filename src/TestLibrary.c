@@ -35,9 +35,21 @@ task main()
 	//wait degrees
 	testDegrees(0, 360, 20);
 
-	//wait time*/
-	testTime(1000);
+	//wait time
+	testTime(1000);*/
+
+	//
 
 
 
 }
+
+/**
+	 * waitTouch
+	 * waitLight
+	 * waitDistance
+	 * waitSound
+	 * waitTime				funziona check
+	 * waitRotations 	funziona check
+	 * waitDegrees 		funziona check
+	 */
