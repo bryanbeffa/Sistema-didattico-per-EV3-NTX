@@ -224,6 +224,9 @@ Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del m
 
 ![Attese del motore](img/NXTMotorOptions.png)
 
+Come seconda parte del progetto dovrà venire scritto un programma di test di alcuni dei metodi della libreria e del linguaggio RobotC in se così da verificare se esso porta dei vantaggi o meno.
+Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
+
 ### Design dell’architettura del sistema
 
 Descrive:
