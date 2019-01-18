@@ -231,21 +231,6 @@ Descrive:
 
 -   Eventuale sitemap
 
-### Design dei dati e database
-
-Descrizione delle strutture di dati utilizzate dal programma in base
-agli attributi e le relazioni degli oggetti in uso.
-
-### Schema E-R, schema logico e descrizione.
-
-Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
-versione, mentre le vecchie saranno sui diari.
-
-### Design delle interfacce
-
-In questo progetto non vi è richiesto di creare un interfaccia utente,
-ma solo delle librerie per EV3 e NXT.
-
 ### Design procedurale
 
 Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
