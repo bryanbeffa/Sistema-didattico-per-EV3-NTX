@@ -12,12 +12,11 @@
  * @author Matteo Forni
  * @version 11.01.2019
  */
-task main()
+
+int setWhite()
 {
 	int white;
-	int black;
-	bool button = false;
-	while(!button)
+	while(true)
   {
   	//stampo sul display
   	nxtDisplayCenteredTextLine(1, "Premi la freccia");
@@ -30,11 +29,15 @@ task main()
     {
       white = (SensorValue[lightA]+SensorValue[lightB])/2;
       writeDebugStreamLine("bianco: %d", white);
-      button = true;
+      return white;
     }
 	}
-	button = false;
-	while (!button)
+}
+
+int setBlack()
+{
+	int black;
+	while (true)
   {
   	//stampo sul display
   	nxtDisplayCenteredTextLine(1, "Premi la freccia");
@@ -46,12 +49,23 @@ task main()
     if (nNxtButtonPressed == 2)
     {
       black = (SensorValue[lightA]+SensorValue[lightB])/2;
-      button = true;
+      return black;
     }
 	}
+}
 
-	button = false;
-	while(!button)
+task main()
+{
+	int white;
+	int black;
+
+	//setto il bianco e il nero
+	white = setWhite();
+	black = setBlack();
+
+
+	bool startProgram = true;
+	while(startProgram)
 	{
 		//stampo sul display
   	nxtDisplayCenteredTextLine(1, "Premi il bottone");
@@ -62,7 +76,8 @@ task main()
 		//premere il tasto al centro per iniziare il line follower
     if (nNxtButtonPressed == 3)
     {
-      button = true;
+    	eraseDisplay();
+    	break;
     }
 	}
 
@@ -82,8 +97,8 @@ task main()
 		double speedB = errorB * margin;
 
 		//setto la velocità al motore collegato alla porta A e alla porta B
-		motor[motorB] = speedB+30;
-		motor[motorA] = speedA+30;
+		motor[motorB] = speedB+10;
+		motor[motorA] = speedA+10;
 		waitTime(10);
 	}
 
@@ -91,5 +106,5 @@ task main()
 	motor[motorA] = 0;
 
 	//muovo il motore secondario
-	waitDegrees(motorC, 120, 20);
+	waitDegrees(motorC, 160, -20);
 }
