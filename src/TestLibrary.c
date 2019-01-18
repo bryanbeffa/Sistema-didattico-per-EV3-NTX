@@ -41,7 +41,6 @@ void testLight(int port, int threshold)
 {
 	motor[motorA] = 10;
 	waitLight(port, 80, true);
-	//Ciao BRAJAN
 	motor[motorA] = -20;
 	waitLight(port, threshold, false);
 }
