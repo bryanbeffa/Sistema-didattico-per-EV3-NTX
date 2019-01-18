@@ -210,11 +210,6 @@ In questo progetto è stato utilizzato il seguente hardware:
 
 ## Progettazione
 
-Questo capitolo descrive esaustivamente come deve essere realizzato il
-prodotto fin nei suoi dettagli. Una buona progettazione permette
-all’esecutore di evitare fraintendimenti e imprecisioni
-nell’implementazione del prodotto.
-
 Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
 La libreria da creare dovrà contenere sette metodi complementari a quelli del blocchetto wait del linguaggio visivo NXT senza il metodo di riconoscimento del colore che non viene scritto dato che i sensori non possono distinguere i colori.
 
@@ -229,35 +224,9 @@ Il programma sarà un line follower proporzionale che si ferma ad una determinat
 
 ### Design dell’architettura del sistema
 
-Descrive:
+Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre classi: la libreria di wait, la classe di test della libreria e la classe che esegue il line follower. Entrambe le due classi utilizzano la libreria.
 
--   La struttura del programma/sistema lo schema di rete...
-
--   Gli oggetti/moduli/componenti che lo compongono.
-
--   I flussi di informazione in ingresso ed in uscita e le
-    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
-    dati* (DFD).
-
--   Eventuale sitemap
-
-### Design procedurale
-
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
-
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
+![Class diagram](img/ClassDiagram.png)
 
 ## Implementazione
 
