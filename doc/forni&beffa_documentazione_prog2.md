@@ -348,6 +348,8 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 -   https://gist.github.com/dhmmjoph/f63a002bde9409bbff97, *Proportional line follower*, 16.01.2018.
 
+-   http://ev3lessons.com/en/ProgrammingLessons/advanced/LineFollower.pdf, *Proportional line follower*, 16.01.2018.
+
 -   https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown, *Markdown images*, 23.01.2018.
 
 ## Allegati
