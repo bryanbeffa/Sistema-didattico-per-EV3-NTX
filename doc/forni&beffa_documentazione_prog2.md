@@ -235,7 +235,7 @@ Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre cla
 ### Libreria wait
 
 La libreria wait, scritta nel linguaggio RobotC, definisce dei metodi d'attesa utili per LEGO Robot NXT.  
-I metodi che abbiamo definito sono:
+I metodi che abbiamo definito sono
 - waitTouch(int)
 - waitLight(int, int, bool)
 - waitDistance(int, int)
