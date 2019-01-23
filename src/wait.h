@@ -1,4 +1,10 @@
 /**
+ *
+ * @Bryan Beffa
+ * @Matteo Forni
+ */
+
+/**
  * Metodo che attende che il sensore di tatto venga premuto
  *
  * @param port porta a cui è collegato il sensore di tatto
@@ -18,7 +24,7 @@ void waitTouch(int port){
  * Metodo che attende che il sensore di luce rilevi un valore sotto la soglia desiderata
  *
  * @param port porta a cui è collegato il sensore di luce
- * @param threshold soglia di luce minima
+ * @param threshold soglia di luce minima/massima
  * @param higher valore booleano che determina se bisognerà attendere un valore superiore o inferiore alla soglia.
  */
 bool waitLight(int port, int threshold, bool higher){
@@ -43,7 +49,7 @@ bool waitLight(int port, int threshold, bool higher){
  *
  * @param port porta a cui è collegato il sensore infrarosso
  * @param distance distanza minima da un oggetto
- * @return se la distanz
+ * @return se la distanza è inferiore alla soglia
  */
 bool waitDistance(int port, int distance){
 	bool flag = true;

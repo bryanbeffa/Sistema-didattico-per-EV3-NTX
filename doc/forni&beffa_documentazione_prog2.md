@@ -26,6 +26,8 @@
 
 1. [Implementazione](#implementazione)
 
+  - [Libreria wait](#libreria-wait)
+
 1. [Test](#test)
 
   - [Protocollo di test](#protocollo-di-test)
@@ -230,24 +232,221 @@ Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre cla
 
 ## Implementazione
 
-In questo capitolo dovrà essere mostrato come è stato realizzato il
-lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
-risultato ottenuto non per forza può essere come era stato progettato.
+### Libreria wait
 
-Sulla base di queste informazioni il lavoro svolto dovrà essere
-riproducibile.
+La libreria wait, scritta nel linguaggio RobotC, definisce dei metodi d'attesa utili per LEGO Robot NXT.  
+I metodi che abbiamo definito sono:
+- waitTouch(int)
+- waitLight(int, int, bool)
+- waitDistance(int, int)
+- waitSound(int, int)
+- waitTime(long)
+- waitRotations(int, int, int)
+- waitDegree(int, int, int)
 
-In questa parte è richiesto l’inserimento di codice sorgente/print
-screen di maschere solamente per quei passaggi particolarmente
-significativi e/o critici.
+#### waitTouch(int port)
 
-Inoltre dovranno essere descritte eventuali varianti di soluzione o
-scelte di prodotti con motivazione delle scelte.
+Il metodo d'attesa waitTouch(int port), che richiede la porta a cui è collegato il sensore come parametro. Questo metodo attende che il sensore di tatto venga premuto.
 
-Non deve apparire nessuna forma di guida d’uso di librerie o di
-componenti utilizzati. Eventualmente questa va allegata.
+Il metodo è molto semplice. Viene dichiarata una variabile booleana che indica se il sensore di tocco è premuto.  
+Quando il sensore viene premuto il valore letto dal sensore corrisponde "0" e alla variabile booleana viene assegnato il valore *true* in modo che il ciclo *while* termini.
 
-Per eventuali dettagli si possono inserire riferimenti ai diari.
+```
+/**
+ * Metodo che attende che il sensore di tatto venga premuto
+ *
+ * @param port porta a cui è collegato il sensore di tatto
+ */
+void waitTouch(int port){
+	bool isPressed = false;
+
+	while(!isPressed){
+		//controllo se il sensore è stato premuto
+		if(SensorValue[port] > 0){
+			isPressed = !isPressed;
+		}
+	}
+}
+```
+
+Esempio di utilizzo:
+
+Il robot NXT quando il sensore di tocco viene premuto emette un suono.
+
+#### waitLight(int port, int threshold, bool higher)
+
+Il metodo waitLight(int port, int threshold, bool higher) attende che il
+sensore di luce rilevi un valore superiore alla
+soglia *threshold* se al parametro *higher* è stato assegnato il valore *true*
+oppure inferiore alla soglia *threshold* se il parametro *higher* corrisponde a
+*false*.
+
+Quando accade una delle due situazioni, la variabile booleana *flag*,
+utilizzata per ripetere il ciclo, viene settata a *false* così da terminare
+il ciclo.
+
+```
+/**
+ * Metodo che attende che il sensore di luce rilevi un valore sotto la soglia desiderata
+ *
+ * @param port porta a cui è collegato il sensore di luce
+ * @param threshold soglia di luce minima/massima
+ * @param higher valore booleano che determina se bisognerà attendere un valore superiore o inferiore alla soglia.
+ */
+bool waitLight(int port, int threshold, bool higher){
+	bool flag = true;
+
+	while(flag){
+		//controllo che il valore letto del sensore non sia sotto la soglia minima
+		if(higher){
+			if(SensorValue(port) > threshold){
+				flag = !flag;
+			}
+		}else{
+			if(SensorValue(port) < threshold){
+				flag = !flag;
+			}
+		}
+	}
+}
+```
+Esempio di utilizzo:
+
+Il robot avanza fino al rilevamento del colore nero.
+
+#### waitDistance(int port, int distance)
+
+Il metodo waitDistance(int port, int distance) attende che venga rilevato, dal
+dal sensore di distanza (ultrasuoni), un valore inferiore a quello passato
+come parametro *distance*.
+
+Questo metodo viene spesso utilizzato durante il movimento di un robot per
+farlo fermare ad una determinata distanza da un oggetto.
+
+Waitdistance(int port, int distance), ritornando un valore booleano, deve
+essere chiamato all'interno di un ciclo così ad ogni ripetizione viene
+controllato se la distanza è inferiore o maggiore alla soglia determinata.
+
+```
+/**
+ * Metodo che attende che il sensore di distanza rilevi una distanza inferiore alla soglia
+ *
+ * @param port porta a cui è collegato il sensore infrarosso
+ * @param distance distanza minima da un oggetto
+ * @return se la distanza è inferiore alla soglia
+ */
+bool waitDistance(int port, int distance){
+    //controllo che il valore letto non sia inferiore alla soglia minima
+    if(SensorValue(port) <= distance){
+      return false;
+    }
+    return true;
+}
+```
+
+Esempio di utilizzo:
+
+Il robot avanza fino ad arrivare alla distanza decisa dall'utente da un
+oggetto, si ferma, e torna indietro.
+
+#### waitSound(int port, int threshold)
+
+Questo metodo d'attesa ha lo stesso principio del metodo waitDistance()
+con la differenza che termina il ciclo quando il sensore di suono rilevata
+un valore superiore alla soglia *threshold* passata come parametro.
+
+```
+/**
+ * Metodo che attende che il sensore di suono rilevi un suono che supero la soglia desiderata
+ *
+ * @param port porta a cui è collegato il sensore di suono
+ * @param threshold soglia del suono
+ */
+void waitSound(int port, int threshold){
+	bool flag = true;
+	while(flag){
+		//controllo che il sensore di suono non rilevi un suono che superi la soglia
+		if(SensorValue[port] >= threshold){
+			flag = !flag;
+		}
+	}
+}
+```
+Esempio di utilizzo:
+
+Il robot avanza fino, quando rileva un valore superiore alla soglia si ferma.
+
+#### waitTime(long millis)
+
+Il metodo waitTime è molto semplice, attende che il tempo passato come
+parametro *millis*.
+
+Il codice è molto semplice ed è formato da un solo metodo al suo interno,
+abbiamo deciso comunque di inserirlo nella libreria per la sua
+completezza generale.
+```
+/**
+ * Metodo che permette l'attesa di un certo numero di millisecondi
+ *
+ * @param millis millisecondi di attesa desiderati
+ */
+void waitTime(long millis){
+	//aspetto i millesecondi desiderati
+	wait1Msec(millis);
+}
+```
+Esempio di utilizzo:
+
+Il robot emette un suono per 2 secondi.
+
+#### waitRotations(int port, int times, int speed)
+
+Il metodo di attesa waitRotations(int port, int times, int speed) attende
+che il motore, collegato alla porta passata come parametro, effettui il
+numero di rotazioni specificate alla velocità desiderata.
+
+```
+/**
+ * Metodo che attende che il motore passato come parametro svolga il numero di rotazioni desiderato
+ *
+ * @param port porta a cui è collegato il motore
+ * @paaram times rotazioni che il motore deve svolgere
+ * @param speed velocità desiderata del motore
+ */
+void waitRotations(int port, int times, int speed){
+	//calcolo il numero di rotazioni in gradi
+	int degree = 360*times;
+	setMotorTarget(port, degree, speed);
+	waitUntilMotorStop(port);
+}
+```
+
+Esempio di utilizzo:
+
+Il robot deve avanzare di 5 rotazioni del motore.
+
+#### waitDegrees(int port, int deegre, int speed)
+
+Questo metodo attende che il motere passato come parametro, effettui la rotazione dei gradi specificati come parametro *degree*.
+
+```
+/**
+ * Metodo che permette la rotazione del motore del numero di gradi desiderato
+ *
+ * @param port porta a cui è collegato il motore
+ * @param degree gradi di rotazione del motore desiderati
+ * @param speed velocità del motore desiderata
+ * @param millis millisecondi di attesa per permettere la rotazione dei gradi desiderati (scegliere un valore che permetta la rotazione completa)
+ */
+void waitDegrees(int port, int degree, int speed){
+	setMotorTarget(port, degree, speed);
+	waitUntilMotorStop(port);
+}
+```
+
+Esempio di utilizzo:
+
+Il motore del robot deve effettuare una rotazione di 90°.
 
 ## Test
 
