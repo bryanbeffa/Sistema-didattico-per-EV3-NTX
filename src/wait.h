@@ -46,16 +46,11 @@ bool waitLight(int port, int threshold, bool higher){
  * @return se la distanz
  */
 bool waitDistance(int port, int distance){
-	bool flag = true;
-
-	while(flag){
-		//controllo che il valore letto non sia inferiore alla soglia minima
-		if(SensorValue(port) <= distance){
-			flag = !flag;
-			return flag;
-		}
-		return true;
+	//controllo che il valore letto non sia inferiore alla soglia minima
+	if(SensorValue(port) <= distance){
+		return false;
 	}
+	return true;
 }
 
 /**
