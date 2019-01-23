@@ -213,11 +213,11 @@ In questo progetto è stato utilizzato il seguente hardware:
 Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
 La libreria da creare dovrà contenere sette metodi complementari a quelli del blocchetto wait del linguaggio visivo NXT senza il metodo di riconoscimento del colore che non viene scritto dato che i sensori non possono distinguere i colori.
 
-![Blocco di wait](img/NXTLinguaggioVisivo.png)
+<img src="img/NXTLinguaggioVisivo.png" width=550 height=500>
 
 Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del motore nelle sue tre opzioni pari a quelle del linguaggio visivo: per rotazioni, per secondi o per gradi.
 
-![Attese del motore](img/NXTMotorOptions.png)
+<img src="img/NXTMotorOptions.png" width=400>
 
 Come seconda parte del progetto dovrà venire scritto un programma di test di alcuni dei metodi della libreria e del linguaggio RobotC in se così da verificare se esso porta dei vantaggi o meno.
 Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
@@ -226,7 +226,7 @@ Il programma sarà un line follower proporzionale che si ferma ad una determinat
 
 Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre classi: la libreria di wait, la classe di test della libreria e la classe che esegue il line follower. Entrambe le due classi utilizzano la libreria.
 
-![Class diagram](img/ClassDiagram.png)
+<img src="img/ClassDiagram.png" width=550 height=500>
 
 ## Implementazione
 
