@@ -97,8 +97,8 @@ task main()
 		double speedB = errorB * margin;
 
 		//setto la velocità al motore collegato alla porta A e alla porta B
-		motor[motorB] = speedB+10;
-		motor[motorA] = speedA+10;
+		motor[motorB] = speedB+15;
+		motor[motorA] = speedA+15;
 		waitTime(10);
 	}
 
