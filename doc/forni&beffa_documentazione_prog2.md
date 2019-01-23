@@ -346,6 +346,10 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 -   http://www.robotc.net/forums/viewtopic.php?f=52&t=5916, *RobotC pragma manual*, 19.12.2018.
 
+-   https://gist.github.com/dhmmjoph/f63a002bde9409bbff97, *Proportional line follower*, 16.01.2018.
+
+-   https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown, *Markdown images*, 23.01.2018.
+
 ## Allegati
 
 Elenco degli allegati, esempio:
