@@ -188,7 +188,7 @@ secondo anno durante la WRO.
 
 Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era stato pensato di suddividere i metodi di entrambi i linguaggi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
 
-![Gantt iniziale](img/GanttIniziale.png)
+<img src="img/GanttIniziale.png">
 
 ### Analisi dei mezzi
 
