@@ -261,12 +261,23 @@ ripetibile alle stesse condizioni.
 
 |Test Case      | TC-001                               |
 |---------------|--------------------------------------|
-|**Nome**       |Import a card, but not shown with the GUI |
-|**Riferimento**|REQ-012                               |
-|**Descrizione**|Import a card with KIC, KID and KIK keys with no obfuscation, but not shown with the GUI |
-|**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
-|**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
-|**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
+|**Nome**       |Test di funzionamento della libreria di wait|
+|**Riferimento**|REQ-09                               |
+|**Descrizione**|Bisogna testare il corretto funzionamento della libreria di wait. |
+|**Prerequisiti**|Bisogna avere il robot con il firmware di robotc installato, collegato al PC con i sensori e/o gli attuatori necessari collegati ad esso. |
+|**Procedura**     | Bisognerà aprire la classe di test TestLibrary.c e, per ogni metodo della libreria Wait.h, Bisognerà
+collegare al robot i sensori/attuatori giusti, decommentare il metodo di test ed eseguirlo. Se il robot attende la soglia o il valore atteso allora il metodo richiamato funzionerà correttamente  |
+|**Risultati attesi** |Con tutti i metodi richiamati il robot dovrebbe attendere il valore o la soglia e poi terminare il programma. |
+
+|Test Case      | TC-002                               |
+|---------------|--------------------------------------|
+|**Nome**       |Test di funzionamento del line follower proporzionale|
+|**Riferimento**|REQ-10                               |
+|**Descrizione**|Bisogna testare se la classe LineFollower.c funziona correttamente. |
+|**Prerequisiti**|Si necessita di avere un robot con il firmware di robotc installato e con collegati due sensori di luce e uno di ultrasuoni. |
+|**Procedura**     | Bisognerà compilare il codice dall'ambiente di sviluppo di robotc sul robot appositamente collegato al computer. Fatto ciò si eseguirà il programma, si seguiranno le istruzioni stampate a schermo ed infine si posizionerà il robot sopra una linea nera.   |
+|**Risultati attesi** |Il robot dovrebbe iniziare a seguire la linea nera. |
+
 
 
 ### Risultati test
