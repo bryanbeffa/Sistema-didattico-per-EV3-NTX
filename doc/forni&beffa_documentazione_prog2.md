@@ -448,6 +448,17 @@ Esempio di utilizzo:
 
 Il motore del robot deve effettuare una rotazione di 90°.
 
+### LineFollower
+
+Abbiamo realizzato un line follower utilizzando alcuni dei metodi
+che abbiamo definito nella libreria wait.
+Il prgramma esegue un LineFollower proporzionale con l'utilizzano
+di due sensori di luce, un sensore ultrasuoni e un terzo motore
+che fa da braccio meccanico.
+
+
+
+
 ## Test
 
 ### Protocollo di test
