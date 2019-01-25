@@ -56,6 +56,7 @@ int setBlack()
 
 task main()
 {
+	//variabili in cui viene salvato il valore del colore bianco e nero
 	int white;
 	int black;
 
