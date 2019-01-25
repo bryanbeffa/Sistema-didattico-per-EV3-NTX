@@ -465,7 +465,20 @@ Se il blocchetto trova un ostacolo ad una distanza,
 determinata dall'utente, si ferma
 e fa girare il braccio meccanico per poi terminare il programma.
 
+Come prima cosa si setta il colore bianco ed il colore nero
+tramite dei metodi che abbiamo creato setWhite() and setBlack().
 
+```
+//variabili in cui viene salvato il valore del colore bianco e nero
+int white;
+int black;
+
+//setto il bianco e il nero
+white = setWhite();
+black = setBlack();
+```
+I due metodi sono simili e chiedono all'utente di posizionare il robot sul
+ rispettivo colore e premere il tasto descritto per settare il valore.
 
 ## Test
 
