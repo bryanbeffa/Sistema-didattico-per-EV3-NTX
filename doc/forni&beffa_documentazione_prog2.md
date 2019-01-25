@@ -452,10 +452,18 @@ Il motore del robot deve effettuare una rotazione di 90°.
 
 Abbiamo realizzato un line follower utilizzando alcuni dei metodi
 che abbiamo definito nella libreria wait.
-Il prgramma esegue un LineFollower proporzionale con l'utilizzano
-di due sensori di luce, un sensore ultrasuoni e un terzo motore
-che fa da braccio meccanico.
 
+Il programma esegue un LineFollower proporzionale con l'utilizzo di:
+ - due sensori di luce
+ - un sensore ultrasuono
+ - terzo motore (braccio meccanico)
+
+#### Descrizione
+Il robot deve, dopo che sono stati configurati i valori per il colore
+bianco ed il colore nero, seguire  la linea nera.
+Se il blocchetto trova un ostacolo ad una distanza,
+determinata dall'utente, si ferma
+e fa girare il braccio meccanico per poi terminare il programma.
 
 
 
