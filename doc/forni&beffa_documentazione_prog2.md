@@ -501,6 +501,71 @@ int setBlack()
 }
  ```
 
+ Successivamente il robot inizia a svolgere il line follower.
+
+ ```
+ while(waitDistance(distance, 20)){
+	//margine consentito
+	double margin = 1.5;
+
+	//soglia di luce riflessa
+	int threshold = 50;
+
+	//calcolo l'errore
+	int errorA = SensorValue[lightA] - (white+black)/2;
+	int errorB = SensorValue[lightB] - (white+black)/2;
+
+	//calcolo la velocità
+	double speedA = errorA * margin;
+	double speedB = errorB * margin;
+
+	//setto la velocità al motore collegato alla porta A e alla porta B
+	motor[motorB] = speedB+15;
+	motor[motorA] = speedA+15;
+	waitTime(10);
+}
+ ```
+
+Come prima cosa viene definita la variabile *margin* che definisce
+la precisione del line follower. Più il valore è alto e più
+la variazione di velocità aumenta.
+
+Viene definita una soglia, calcolando semplicemente la media tra il colore
+bianco e il colore nero, che serve a calcolare l'errore.
+
+Per calcolare la velocità viene effettuato il calcolo *errorA* o
+rispettivamente *errorB* moltiplicato per il *margin*.
+
+Infine viene asseganata ai due motori la velocità calcolata in precedenza
+e viene utilizzata l'attesa di 10 millisecondi tramite il metodo
+della libreria wait.
+
+```
+while(waitDistance(distance, 20)){
+  ...
+}
+```
+
+All'interno del while vi è il metodo waitDistance (vedi metodo
+*waitDistance(int port, int threshold)*) in cui ad ogni ciclo viene
+controllato se la distanza minima da un oggetto è rispettata o meno.
+
+Infine se la distanza è inferiore alla soglia il robot fa ruotare di 160
+gradi, a velocità di -20, il motore che fa da braccio.
+
+```
+while(waitDistance(distance, 20)){
+  ...
+}
+
+motor[motorB] = 0;
+motor[motorA] = 0;
+
+//muovo il motore secondario
+waitDegrees(motorC, 160, -20);
+
+```
+
 ## Test
 
 ### Protocollo di test
