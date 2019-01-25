@@ -480,6 +480,27 @@ black = setBlack();
 I due metodi sono simili e chiedono all'utente di posizionare il robot sul
  rispettivo colore e premere il tasto descritto per settare il valore.
 
+ ```
+int setBlack()
+{
+  int black;
+  while (true)
+  {
+	//stampo sul display
+	nxtDisplayCenteredTextLine(1, "Premi la freccia");
+	nxtDisplayCenteredTextLine(2, "sinistra per");
+	nxtDisplayCenteredTextLine(3, "selezionare");
+	nxtDisplayCenteredTextLine(4, "il colore nero");
+	//premere il tasto sinistra per selezionare il colore nero
+    if (nNxtButtonPressed == 2)
+    {
+      black = (SensorValue[lightA]+SensorValue[lightB])/2;
+      return black;
+    }
+  }
+}
+ ```
+
 ## Test
 
 ### Protocollo di test
