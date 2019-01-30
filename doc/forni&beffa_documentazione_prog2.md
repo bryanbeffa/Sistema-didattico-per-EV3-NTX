@@ -1,3 +1,6 @@
+<h1>Sistema didattico per NXT</h1>
+<h4>Matteo Forni e Bryan Beffa</h4>
+
 1. [Introduzione](#introduzione)
 
   - [Informazioni sul progetto](#informazioni-sul-progetto)
@@ -48,6 +51,7 @@
 
 1. [Allegati](#allegati)
 
+<div style="page-break-after: always;"></div>
 
 ## Introduzione
 
@@ -110,6 +114,7 @@ secondo anno durante la WRO.
   |**Versione**|2.0                            |
   |**Note**    |Il requisito è stato eliminato. |
 
+<div style="page-break-after: always;"></div>
 
   |ID  |REQ-02                                         |
   |----|------------------------------------------------|
@@ -160,6 +165,8 @@ secondo anno durante la WRO.
   |**Versione**|2.0                            |
   |**Note**    |Il requisito è stato eliminato.|
 
+<div style="page-break-after: always;"></div>
+
   |ID  |REQ-09                                         |
   |----|------------------------------------------------|
   |**Nome**    |Libreria wait|
@@ -191,6 +198,7 @@ secondo anno durante la WRO.
 Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era stato pensato di suddividere i metodi di entrambi i linguaggi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
 
 <img src="img/GanttIniziale.png">
+<div style="page-break-after: always;"></div>
 
 ### Analisi dei mezzi
 
@@ -220,6 +228,7 @@ La libreria da creare dovrà contenere sette metodi complementari a quelli del b
 Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del motore nelle sue tre opzioni pari a quelle del linguaggio visivo: per rotazioni, per secondi o per gradi.
 
 <img src="img/NXTMotorOptions.png" width=400>
+<div style="page-break-after: always;"></div>
 
 Come seconda parte del progetto dovrà venire scritto un programma di test di alcuni dei metodi della libreria e del linguaggio RobotC in se così da verificare se esso porta dei vantaggi o meno.
 Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
@@ -243,6 +252,8 @@ I metodi che abbiamo definito sono
 - waitTime(long)
 - waitRotations(int, int, int)
 - waitDegree(int, int, int)
+
+<div style="page-break-after: always;"></div>
 
 #### waitTouch(int port)
 
@@ -399,6 +410,8 @@ Esempio di utilizzo:
 
 Il robot emette un suono per 2 secondi.
 
+<div style="page-break-after: always;"></div>
+
 #### waitRotations(int port, int times, int speed)
 
 Il metodo di attesa waitRotations(int port, int times, int speed) attende
@@ -467,7 +480,7 @@ e fa girare il braccio meccanico per poi terminare il programma.
 
 Come prima cosa si setta il colore bianco ed il colore nero
 tramite dei metodi che abbiamo creato setWhite() and setBlack().
-
+<div style="page-break-after: always;"></div>
 ```
 //variabili in cui viene salvato il valore del colore bianco e nero
 int white;
@@ -582,8 +595,7 @@ ripetibile alle stesse condizioni.
 |**Riferimento**|REQ-09                               |
 |**Descrizione**|Bisogna testare il corretto funzionamento della libreria di wait. |
 |**Prerequisiti**|Bisogna avere il robot con il firmware di robotc installato, collegato al PC con i sensori e/o gli attuatori necessari collegati ad esso. |
-|**Procedura**     | Bisognerà aprire la classe di test TestLibrary.c e, per ogni metodo della libreria Wait.h, Bisognerà
-collegare al robot i sensori/attuatori giusti, decommentare il metodo di test ed eseguirlo. Se il robot attende la soglia o il valore atteso allora il metodo richiamato funzionerà correttamente  |
+|**Procedura**     | Bisognerà aprire la classe di test TestLibrary.c e, per ogni metodo della libreria Wait.h, Bisognerà collegare al robot i sensori/attuatori giusti, decommentare il metodo di test ed eseguirlo. Se il robot attende la soglia o il valore atteso allora il metodo richiamato funzionerà correttamente  |
 |**Risultati attesi** |Con tutti i metodi richiamati il robot dovrebbe attendere il valore o la soglia e poi terminare il programma. |
 
 |Test Case      | TC-002                               |
@@ -634,34 +646,6 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 ## Bibliografia
 
-### Bibliografia per articoli di riviste
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo dell’articolo (tra virgolette),
-
-3.  Titolo della rivista (in italico),
-
-4.  Anno e numero
-
-5.  Pagina iniziale dell’articolo,
-
-### Bibliografia per libri
-
-
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo del libro (in italico),
-
-3.  ev. Numero di edizione,
-
-4.  Nome dell’editore,
-
-5.  Anno di pubblicazione,
-
-6.  ISBN.
-
 ### Sitografia
 
 -   http://www.robotc.net/forums/viewtopic.php?f=1&t=19568, *RobotC Forum*, 21.11.2018.
@@ -679,6 +663,8 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 -   http://ev3lessons.com/en/ProgrammingLessons/advanced/LineFollower.pdf, *Proportional line follower*, 16.01.2018.
 
 -   https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown, *Markdown images*, 23.01.2018.
+
+-   https://stackoverflow.com/questions/22601053/pagebreak-in-markdown-while-creating-pdf, *Markdown page break*, 30.01.2019.
 
 ## Allegati
 
