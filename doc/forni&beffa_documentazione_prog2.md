@@ -77,6 +77,8 @@
 
 ### Scopo
 
+<div style="text-align:justify">
+
 Lo scopo di questo progetto è quello di creare due librerie, una in RobotC e l'altra in Java sia per bricks EV3 sia per NXT, per aiutare gli allievi del secondo anno di informatica che parteciperanno alla gara di robotica WRO. Esse permetteranno di eseguire le operazioni basilari con i motori
 e con i seguenti sensori:
 
@@ -89,14 +91,22 @@ e con i seguenti sensori:
 Al termine della creazione delle librerie dovrà essere eseguito un test di performance
 per determinare quale tra le due librerie funziona meglio.
 
+</div>
+
 ## Analisi
 
 ### Analisi del dominio
 
+<div style="text-align:justify">
+
 La scuola necessita di una libreria per gli allievi di informatica del secondo anno, essa servirà a controllare i robot Ev3 e NXT durante la competizione di robotica WRO. La libreria dovrà contenere del codice per il controllo degli attuatori e dei sensori così da aiutare l’utente con l’uso dei Robot Mindstorm, essa dovrà essere scritta in RobotC e in Java e dovrà poi venire valutato quale dei due linguaggi è il migliore e più performante. La libreria dovrà essere di facile comprensione e modifica per gli allievi, dovrà quindi comprendere una guida all’utilizzo.
 Attualmente, per i ragazzi del secondo anno, non ci sono altri prodotti che svolgono questo compito. Le conoscenze che saranno necessarie per utilizzare il prodotto saranno quelle di base della programmazione.
 
+</div>
+
 ### Analisi e specifica dei requisiti
+
+<div style="text-align:justify; margin-bottom:15px;">
 
 Il committente necessita di librerie utili per l’utilizzo dei robot LEGO
 Mindstorm. Le librerie devono contenere metodi utili per ogni
@@ -106,6 +116,9 @@ dovranno essere compatibili con robot di diverse forme e dimensioni.
 Per ogni attuatore/sensore sono disponibili più metodi che effettuano
 azioni distinte. Queste librerie servono per aiutare gli allievi del
 secondo anno durante la WRO.
+
+
+</div>
 
   |ID  |REQ-01                                         |
   |----|------------------------------------------------|
@@ -195,7 +208,11 @@ secondo anno durante la WRO.
 
 ### Pianificazione
 
+<div style="text-align:justify">
+
 Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era stato pensato di suddividere i metodi di entrambi i linguaggi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
+
+</div>
 
 <img src="img/GanttIniziale.png">
 <div style="page-break-after: always;"></div>
@@ -203,12 +220,20 @@ Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era 
 ### Analisi dei mezzi
 
 #### Software
+
+<div style="text-align:justify">
+
 I software che sono stati utilizzati sono i seguenti:
 
 - LEGO Mindstorm NXT
 - RobotC IDE
 
+</div>
+
 #### Hardware
+
+<div style="text-align:justify">
+
 In questo progetto è stato utilizzato il seguente hardware:
 - Portatili (specifiche tecniche nella media) con Windows 10
 - Robot Lego NXT brick
@@ -218,30 +243,50 @@ In questo progetto è stato utilizzato il seguente hardware:
 - Motore principale
 - Motore secondario
 
+</div>
+
 ## Progettazione
+
+<div style="text-align:justify">
 
 Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
 La libreria da creare dovrà contenere sette metodi complementari a quelli del blocchetto wait del linguaggio visivo NXT senza il metodo di riconoscimento del colore che non viene scritto dato che i sensori non possono distinguere i colori.
 
+</div>
+
 <img src="img/NXTLinguaggioVisivo.png" width=550 height=500>
+
+<div style="text-align:justify">
 
 Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del motore nelle sue tre opzioni pari a quelle del linguaggio visivo: per rotazioni, per secondi o per gradi.
 
-<img src="img/NXTMotorOptions.png" width=400>
+</div>
+
+<img src="img/NXTMotorOptions.png" width=300>
 <div style="page-break-after: always;"></div>
+
+<div style="text-align:justify">
 
 Come seconda parte del progetto dovrà venire scritto un programma di test di alcuni dei metodi della libreria e del linguaggio RobotC in se così da verificare se esso porta dei vantaggi o meno.
 Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
 
+</div>
+
 ### Design dell’architettura del sistema
 
+<div style="text-align:justify">
+
 Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre classi: la libreria di wait, la classe di test della libreria e la classe che esegue il line follower. Entrambe le due classi utilizzano la libreria.
+
+</div>
 
 <img src="img/ClassDiagram.png" width=550 height=500>
 
 ## Implementazione
 
 ### Libreria wait
+
+<div style="text-align:justify">
 
 La libreria wait, scritta nel linguaggio RobotC, definisce dei metodi d'attesa utili per LEGO Robot NXT.  
 I metodi che abbiamo definito sono
@@ -253,14 +298,20 @@ I metodi che abbiamo definito sono
 - waitRotations(int, int, int)
 - waitDegree(int, int, int)
 
+</div>
+
 <div style="page-break-after: always;"></div>
 
 #### waitTouch(int port)
+
+<div style="text-align:justify">
 
 Il metodo d'attesa waitTouch(int port), che richiede la porta a cui è collegato il sensore come parametro. Questo metodo attende che il sensore di tatto venga premuto.
 
 Il metodo è molto semplice. Viene dichiarata una variabile booleana che indica se il sensore di tocco è premuto.  
 Quando il sensore viene premuto il valore letto dal sensore corrisponde "0" e alla variabile booleana viene assegnato il valore *true* in modo che il ciclo *while* termini.
+
+</div>
 
 ```
 /**
@@ -284,7 +335,11 @@ Esempio di utilizzo:
 
 Il robot NXT quando il sensore di tocco viene premuto emette un suono.
 
+
+
 #### waitLight(int port, int threshold, bool higher)
+
+<div style="text-align:justify">
 
 Il metodo waitLight(int port, int threshold, bool higher) attende che il
 sensore di luce rilevi un valore superiore alla
@@ -295,6 +350,8 @@ oppure inferiore alla soglia *threshold* se il parametro *higher* corrisponde a
 Quando accade una delle due situazioni, la variabile booleana *flag*,
 utilizzata per ripetere il ciclo, viene settata a *false* così da terminare
 il ciclo.
+
+</div>
 
 ```
 /**
@@ -327,6 +384,8 @@ Il robot avanza fino al rilevamento del colore nero.
 
 #### waitDistance(int port, int distance)
 
+<div style="text-align:justify">
+
 Il metodo waitDistance(int port, int distance) attende che venga rilevato, dal
 dal sensore di distanza (ultrasuoni), un valore inferiore a quello passato
 come parametro *distance*.
@@ -337,6 +396,8 @@ farlo fermare ad una determinata distanza da un oggetto.
 Waitdistance(int port, int distance), ritornando un valore booleano, deve
 essere chiamato all'interno di un ciclo così ad ogni ripetizione viene
 controllato se la distanza è inferiore o maggiore alla soglia determinata.
+
+</div>
 
 ```
 /**
@@ -355,16 +416,24 @@ bool waitDistance(int port, int distance){
 }
 ```
 
+<div style="text-align:justify">
+
 Esempio di utilizzo:
 
 Il robot avanza fino ad arrivare alla distanza decisa dall'utente da un
 oggetto, si ferma, e torna indietro.
 
+</div>
+
 #### waitSound(int port, int threshold)
+
+<div style="text-align:justify">
 
 Questo metodo d'attesa ha lo stesso principio del metodo waitDistance()
 con la differenza che termina il ciclo quando il sensore di suono rilevata
 un valore superiore alla soglia *threshold* passata come parametro.
+
+</div>
 
 ```
 /**
@@ -389,12 +458,17 @@ Il robot avanza fino, quando rileva un valore superiore alla soglia si ferma.
 
 #### waitTime(long millis)
 
+<div style="text-align:justify">
+
 Il metodo waitTime è molto semplice, attende che il tempo passato come
 parametro *millis*.
 
 Il codice è molto semplice ed è formato da un solo metodo al suo interno,
 abbiamo deciso comunque di inserirlo nella libreria per la sua
 completezza generale.
+
+</div>
+
 ```
 /**
  * Metodo che permette l'attesa di un certo numero di millisecondi
@@ -414,9 +488,13 @@ Il robot emette un suono per 2 secondi.
 
 #### waitRotations(int port, int times, int speed)
 
+<div style="text-align:justify">
+
 Il metodo di attesa waitRotations(int port, int times, int speed) attende
 che il motore, collegato alla porta passata come parametro, effettui il
 numero di rotazioni specificate alla velocità desiderata.
+
+</div>
 
 ```
 /**
@@ -440,7 +518,11 @@ Il robot deve avanzare di 5 rotazioni del motore.
 
 #### waitDegrees(int port, int deegre, int speed)
 
+<div style="text-align:justify">
+
 Questo metodo attende che il motere passato come parametro, effettui la rotazione dei gradi specificati come parametro *degree*.
+
+</div>
 
 ```
 /**
@@ -463,6 +545,8 @@ Il motore del robot deve effettuare una rotazione di 90°.
 
 ### LineFollower
 
+<div style="text-align:justify">
+
 Abbiamo realizzato un line follower utilizzando alcuni dei metodi
 che abbiamo definito nella libreria wait.
 
@@ -471,7 +555,12 @@ Il programma esegue un LineFollower proporzionale con l'utilizzo di:
  - un sensore ultrasuono
  - terzo motore (braccio meccanico)
 
+</div>
+
 #### Descrizione
+
+<div style="text-align:justify">
+
 Il robot deve, dopo che sono stati configurati i valori per il colore
 bianco ed il colore nero, seguire  la linea nera.
 Se il blocchetto trova un ostacolo ad una distanza,
@@ -480,7 +569,11 @@ e fa girare il braccio meccanico per poi terminare il programma.
 
 Come prima cosa si setta il colore bianco ed il colore nero
 tramite dei metodi che abbiamo creato setWhite() and setBlack().
+
+</div>
+
 <div style="page-break-after: always;"></div>
+
 ```
 //variabili in cui viene salvato il valore del colore bianco e nero
 int white;
@@ -490,8 +583,13 @@ int black;
 white = setWhite();
 black = setBlack();
 ```
+
+<div style="text-align:justify">
+
 I due metodi sono simili e chiedono all'utente di posizionare il robot sul
  rispettivo colore e premere il tasto descritto per settare il valore.
+
+ </div>
 
  ```
 int setBlack()
@@ -539,6 +637,8 @@ int setBlack()
 }
  ```
 
+ <div style="text-align:justify">
+
 Come prima cosa viene definita la variabile *margin* che definisce
 la precisione del line follower. Più il valore è alto e più
 la variazione di velocità aumenta.
@@ -553,11 +653,15 @@ Infine viene asseganata ai due motori la velocità calcolata in precedenza
 e viene utilizzata l'attesa di 10 millisecondi tramite il metodo
 della libreria wait.
 
+</div>
+
 ```
 while(waitDistance(distance, 20)){
   ...
 }
 ```
+
+<div style="text-align:justify">
 
 All'interno del while vi è il metodo waitDistance (vedi metodo
 *waitDistance(int port, int threshold)*) in cui ad ogni ciclo viene
@@ -565,6 +669,8 @@ controllato se la distanza minima da un oggetto è rispettata o meno.
 
 Infine se la distanza è inferiore alla soglia il robot fa ruotare di 160
 gradi, a velocità di -20, il motore che fa da braccio.
+
+</div>
 
 ```
 while(waitDistance(distance, 20)){
@@ -582,12 +688,6 @@ waitDegrees(motorC, 160, -20);
 ## Test
 
 ### Protocollo di test
-
-Definire in modo accurato tutti i test che devono essere realizzati per
-garantire l’adempimento delle richieste formulate nei requisiti. I test
-fungono da garanzia di qualità del prodotto. Ogni test deve essere
-ripetibile alle stesse condizioni.
-
 
 |Test Case      | TC-001                               |
 |---------------|--------------------------------------|
