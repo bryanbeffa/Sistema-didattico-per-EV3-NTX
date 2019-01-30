@@ -611,11 +611,12 @@ ripetibile alle stesse condizioni.
 
 ### Risultati test
 
-Tabella riassuntiva in cui si inseriscono i test riusciti e non del
-prodotto finale. Se un test non riesce e viene corretto l’errore, questo
-dovrà risultare nel documento finale come riuscito (la procedura della
-correzione apparirà nel diario), altrimenti dovrà essere descritto
-l’errore con eventuali ipotesi di correzione.
+|Risultati dei test |                   |                |
+|-------------------|-----------------------------------|
+|**Test case**      |**Risultato**      |**Note**       |
+|TC-001             |successo           |-              |
+|TC-002             |successo           |-              |
+
 
 ### Mancanze/limitazioni conosciute
 
@@ -658,6 +659,8 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 -   http://www.robotc.net/forums/viewtopic.php?f=52&t=5916, *RobotC pragma manual*, 19.12.2018.
 
+-   http://help.robotc.net/WebHelpVEX/index.htm#Resources/topics/VEX_IQ/ROBOTC/Motor_Commands/setMotorTarget.htm, *Move motor with degrees*, 09.01.2019.
+
 -   https://gist.github.com/dhmmjoph/f63a002bde9409bbff97, *Proportional line follower*, 16.01.2018.
 
 -   http://ev3lessons.com/en/ProgrammingLessons/advanced/LineFollower.pdf, *Proportional line follower*, 16.01.2018.
@@ -667,8 +670,6 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 -   https://stackoverflow.com/questions/22601053/pagebreak-in-markdown-while-creating-pdf, *Markdown page break*, 30.01.2019.
 
 ## Allegati
-
-Elenco degli allegati, esempio:
 
 -   Diari di lavoro
 
