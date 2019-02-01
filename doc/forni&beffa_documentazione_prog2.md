@@ -13,23 +13,21 @@
 
   - [Analisi del dominio](#analisi-del-dominio)
 
-  - [Analisi dei mezzi](#analisi-dei-mezzi)
-
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
-  - [Use case](#use-case)
-
   - [Pianificazione](#pianificazione)
+
+  - [Analisi dei mezzi](#analisi-dei-mezzi)
 
 1. [Progettazione](#progettazione)
 
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
-  - [Design dei dati e database](#design-dei-dati-e-database)
-
 1. [Implementazione](#implementazione)
 
   - [Libreria wait](#libreria-wait)
+
+  - [LineFollower](#LineFollower)
 
 1. [Test](#test)
 
@@ -47,7 +45,10 @@
 
   - [Considerazioni personali](#considerazioni-personali)
 
-1. [Sitografia](#sitografia)
+1. [Bibliografia](#bibliografia)
+
+    - [Sitografia](#sitografia)
+    
 
 1. [Allegati](#allegati)
 
@@ -271,9 +272,11 @@ Come seconda parte del progetto dovrà venire scritto un programma di test di al
 Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
 
 </div>
-<div style="text-align:justify">
+
 
 ### Design dell’architettura del sistema
+
+<div style="text-align:justify">
 
 Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre classi: la libreria di wait, la classe di test della libreria e la classe che esegue il line follower. Entrambe le due classi utilizzano la libreria.
 
