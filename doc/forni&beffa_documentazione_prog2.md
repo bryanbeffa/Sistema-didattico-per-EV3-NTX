@@ -48,7 +48,7 @@
 1. [Bibliografia](#bibliografia)
 
     - [Sitografia](#sitografia)
-    
+
 
 1. [Allegati](#allegati)
 
@@ -83,11 +83,19 @@
 Lo scopo di questo progetto è quello di creare due librerie, una in RobotC e l'altra in Java sia per bricks EV3 sia per NXT, per aiutare gli allievi del secondo anno di informatica che parteciperanno alla gara di robotica WRO. Esse permetteranno di eseguire le operazioni basilari con i motori
 e con i seguenti sensori:
 
+</div>
+
   - Sensore tattile
+
   - Sensore di luce/colore
+
   - Giroscopio
+
   - Sensore ad ultrasuoni
+
   - Sensore di suono
+
+<div style="text-align:justify">
 
 Al termine della creazione delle librerie dovrà essere eseguito un test di performance
 per determinare quale tra le due librerie funziona meglio.
@@ -142,7 +150,7 @@ secondo anno durante la WRO.
   |**Nome**    |Classe sensore di tatto Java   |
   |**Priorità**|1                              |
   |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato.   ||
+  |**Note**    |Il requisito è stato eliminato.   |
 
   |ID  |REQ-04                                         |
   |----|------------------------------------------------|
@@ -211,7 +219,7 @@ secondo anno durante la WRO.
 
 <div style="text-align:justify">
 
-Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era stato pensato di suddividere i metodi di entrambi i linguaggi fra i due componenti del gruppo e come questa parte fosse stata pensata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
+Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era stato pensato di suddividere i metodi di entrambi i linguaggi fra i due componenti del gruppo e come questa parte fosse stata stimata come la più lunga del progetto. In questa progettazione non era presente nemmeno il programma dimostrativo.
 
 </div>
 
@@ -226,16 +234,19 @@ Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era 
 
 I software che sono stati utilizzati sono i seguenti:
 
+</div>
+
 - LEGO Mindstorm NXT
 - RobotC IDE
-
-</div>
 
 #### Hardware
 
 <div style="text-align:justify">
 
 In questo progetto è stato utilizzato il seguente hardware:
+
+</div>
+
 - Portatili (specifiche tecniche nella media) con Windows 10
 - Robot Lego NXT brick
 - Sesore di luce
@@ -244,20 +255,18 @@ In questo progetto è stato utilizzato il seguente hardware:
 - Motore principale
 - Motore secondario
 
-</div>
-
 ## Progettazione
 
-<div style="text-align:justify">
+<div style="text-align:justify; margin-bottom:10px;">
 
 Durante i colloqui con i docenti l'idea di base del progetto è cambiata. Con i vari gruppi ci siamo suddivisi i compiti così che noi dobbiamo fare solamente una libreria scritta in RobotC. Questa libreria dovrà contenere i metodi di attesa del blocchetto del linguaggio visivo di NXT. Dovrà inoltre venire fatto un programma di esempio per dimostrare l'utilizzo dei metodi così come il loro funzionamento.
-La libreria da creare dovrà contenere sette metodi complementari a quelli del blocchetto wait del linguaggio visivo NXT senza il metodo di riconoscimento del colore che non viene scritto dato che i sensori non possono distinguere i colori.
+La libreria da creare dovrà contenere sette metodi complementari a quelli del blocchetto wait del linguaggio visivo NXT, mostrati nella foto seguente, senza il metodo di riconoscimento del colore che non viene scritto dato che i sensori non possono distinguere i colori.
 
 </div>
 
 <img src="img/NXTLinguaggioVisivo.png" width=550 height=500>
 
-<div style="text-align:justify">
+<div style="text-align:justify; margin-bottom:10px;">
 
 Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del motore nelle sue tre opzioni pari a quelle del linguaggio visivo: per rotazioni, per secondi o per gradi.
 
@@ -282,7 +291,7 @@ Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre cla
 
 </div>
 
-<img src="img/ClassDiagram.png" width=550 height=500>
+<img src="img/ClassDiagram.png" width=500 height=450>
 
 ## Implementazione
 
@@ -291,7 +300,10 @@ Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre cla
 <div style="text-align:justify">
 
 La libreria wait, scritta nel linguaggio RobotC, definisce dei metodi d'attesa utili per LEGO Robot NXT.  
-I metodi che abbiamo definito sono
+I metodi che abbiamo definito sono:
+
+</div>
+
 - waitTouch(int)
 - waitLight(int, int, bool)
 - waitDistance(int, int)
@@ -300,15 +312,13 @@ I metodi che abbiamo definito sono
 - waitRotations(int, int, int)
 - waitDegree(int, int, int)
 
-</div>
-
 <div style="page-break-after: always;"></div>
 
 #### waitTouch(int port)
 
 <div style="text-align:justify">
 
-Il metodo d'attesa waitTouch(int port), che richiede la porta a cui è collegato il sensore come parametro. Questo metodo attende che il sensore di tatto venga premuto.
+Il metodo d'attesa waitTouch(int port) richiede la porta a cui è collegato il sensore come parametro. Questo metodo attende che il sensore di tatto venga premuto.
 
 Il metodo è molto semplice. Viene dichiarata una variabile booleana che indica se il sensore di tocco è premuto.  
 Quando il sensore viene premuto il valore letto dal sensore corrisponde "0" e alla variabile booleana viene assegnato il valore *true* in modo che il ciclo *while* termini.
@@ -335,7 +345,7 @@ void waitTouch(int port){
 
 Esempio di utilizzo:
 
-Il robot NXT quando il sensore di tocco viene premuto emette un suono.
+Quando il sensore di tocco viene premuto il robot NXT  emette un suono.
 
 
 
@@ -388,18 +398,19 @@ Il robot avanza fino al rilevamento del colore nero.
 
 <div style="text-align:justify">
 
-Il metodo waitDistance(int port, int distance) attende che venga rilevato, dal
-dal sensore di distanza (ultrasuoni), un valore inferiore a quello passato
+Il metodo waitDistance(int port, int distance) attende che venga rilevato, dal sensore di distanza (ultrasuoni), un valore inferiore a quello passato
 come parametro *distance*.
 
 Questo metodo viene spesso utilizzato durante il movimento di un robot per
 farlo fermare ad una determinata distanza da un oggetto.
 
-Waitdistance(int port, int distance), ritornando un valore booleano, deve
+Il metodo, ritornando un valore booleano, deve
 essere chiamato all'interno di un ciclo così ad ogni ripetizione viene
 controllato se la distanza è inferiore o maggiore alla soglia determinata.
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 ```
 /**
@@ -418,9 +429,9 @@ bool waitDistance(int port, int distance){
 }
 ```
 
-<div style="text-align:justify">
-
 Esempio di utilizzo:
+
+<div style="text-align:justify">
 
 Il robot avanza fino ad arrivare alla distanza decisa dall'utente da un
 oggetto, si ferma, e torna indietro.
@@ -432,7 +443,7 @@ oggetto, si ferma, e torna indietro.
 <div style="text-align:justify">
 
 Questo metodo d'attesa ha lo stesso principio del metodo waitDistance()
-con la differenza che termina il ciclo quando il sensore di suono rilevata
+con la differenza che termina il ciclo quando il sensore di suono rileva
 un valore superiore alla soglia *threshold* passata come parametro.
 
 </div>
@@ -456,13 +467,13 @@ void waitSound(int port, int threshold){
 ```
 Esempio di utilizzo:
 
-Il robot avanza fino, quando rileva un valore superiore alla soglia si ferma.
+Il robot avanza fino a quando rileva un valore superiore alla soglia si ferma.
 
 #### waitTime(long millis)
 
 <div style="text-align:justify">
 
-Il metodo waitTime è molto semplice, attende che il tempo passato come
+Il metodo waitTime è molto semplice, attende il tempo in millesecondi passato come
 parametro *millis*.
 
 Il codice è molto semplice ed è formato da un solo metodo al suo interno,
@@ -485,8 +496,6 @@ void waitTime(long millis){
 Esempio di utilizzo:
 
 Il robot emette un suono per 2 secondi.
-
-<div style="page-break-after: always;"></div>
 
 #### waitRotations(int port, int times, int speed)
 
@@ -522,7 +531,7 @@ Il robot deve avanzare di 5 rotazioni del motore.
 
 <div style="text-align:justify">
 
-Questo metodo attende che il motere passato come parametro, effettui la rotazione dei gradi specificati come parametro *degree*.
+Questo metodo attende che il motere, passato come parametro, effettui la rotazione dei gradi specificati come parametro *degree*.
 
 </div>
 
@@ -648,7 +657,7 @@ la variazione di velocità aumenta.
 Viene definita una soglia, calcolando semplicemente la media tra il colore
 bianco e il colore nero, che serve a calcolare l'errore.
 
-Per calcolare la velocità viene effettuato il calcolo *errorA* o
+Per calcolare la velocità viene effettuato il calcolo *errorA* e
 rispettivamente *errorB* moltiplicato per il *margin*.
 
 Infine viene asseganata ai due motori la velocità calcolata in precedenza
@@ -729,9 +738,8 @@ progetto.
 
 ## Consuntivo
 
-Consuntivo del tempo di lavoro effettivo e considerazioni riguardo le
-differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
-consuntivo).
+Come si pu
+<img src="img/GanttConsuntivo.png">
 
 ## Conclusioni
 
