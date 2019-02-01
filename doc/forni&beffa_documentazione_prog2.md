@@ -731,10 +731,7 @@ waitDegrees(motorC, 160, -20);
 
 ### Mancanze/limitazioni conosciute
 
-Descrizione con motivazione di eventuali elementi mancanti o non
-completamente implementati, al di fuori dei test case. Non devono essere
-riportati gli errori e i problemi riscontrati e poi risolti durante il
-progetto.
+Il progetto presenta alcune limitazioni che però sono date dall'hardware e non dalla libreria che abbiamo creato. La precisione dei sensori è approssimativa e può capitare che le letture dei vari sensori non corrispondano al valore reale. Abbiamo inoltre notato che il sensore ultrasuono, se non si lascia una distanza minima adeguata (5 - 6 centimetri), non riesce a misurare il percorso che intercala tra esso e l'ostacolo.
 
 ## Consuntivo
 
