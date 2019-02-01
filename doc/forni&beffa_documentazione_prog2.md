@@ -127,14 +127,14 @@ secondo anno durante la WRO.
   |**Versione**|2.0                            |
   |**Note**    |Il requisito è stato eliminato. |
 
-<div style="page-break-after: always;"></div>
-
   |ID  |REQ-02                                         |
   |----|------------------------------------------------|
   |**Nome**    |Classe sensore di colore Java  |
   |**Priorità**|1                              |
   |**Versione**|2.0                            |
   |**Note**    |Il requisito è stato eliminato.  |
+
+  <div style="page-break-after: always;"></div>
 
   |ID  |REQ-03                                         |
   |----|------------------------------------------------|
@@ -271,10 +271,9 @@ Come seconda parte del progetto dovrà venire scritto un programma di test di al
 Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
 
 </div>
+<div style="text-align:justify">
 
 ### Design dell’architettura del sistema
-
-<div style="text-align:justify">
 
 Qui di seguito si può vedere il diagramma delle classi, in esso vi sono tre classi: la libreria di wait, la classe di test della libreria e la classe che esegue il line follower. Entrambe le due classi utilizzano la libreria.
 
@@ -740,10 +739,10 @@ stato una perdita di tempo? I risultati ottenuti sono generali,
 facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 ### Sviluppi futuri
-  Migliorie o estensioni che possono essere sviluppate sul prodotto.
+  Migliorie al prodotto si possono fare aggiungendo dei metodi che svolgono programmi più complessi magari aspettando delle combinazioni di sensori ma non sappiamo se questo potrebbe tornare utile e se esso fosse necessario può essere facilmente sviluppato dagli allievi interessati.
 
 ### Considerazioni personali
-  Cosa ho imparato in questo progetto? ecc
+  Da questo progetto abbiamo imparato che ci sono svariati linguaggi di programmazione marginali ma che se conosciuti possono aiutare con cose che se sviluppate senza di essi risultano complicate. Noi personalmente, anche se siamo sempre stati scettici dell'utilità del prodotto finale, siamo soddisfatti dai risultati ottenuti.
 
 ## Bibliografia
 
