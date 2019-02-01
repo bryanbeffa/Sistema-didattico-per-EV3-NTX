@@ -735,7 +735,8 @@ Il progetto presenta alcune limitazioni che però sono date dall'hardware e non 
 
 ## Consuntivo
 
-Come si pu
+Come si può notare le differenze con la prima progettazione sono molte dati i cambiamenti nei requisiti che ci sono stati con il passare del tempo. Durante l'implementazione abbiamo provato a dividerci i compiti ma per buona parte del tempo abbiamo lavorato insieme per evitare malfunzionamenti tra le soluzioni. La parte che ha comunque preso più tempo è stata la creazione della libreria a cui si è aggiunta la scrittura del codice per il programma line follower.
+
 <img src="img/GanttConsuntivo.png">
 
 ## Conclusioni
