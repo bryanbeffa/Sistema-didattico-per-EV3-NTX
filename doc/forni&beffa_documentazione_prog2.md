@@ -732,6 +732,7 @@ consuntivo).
 
 ## Conclusioni
 
+Questa soluzione certamente non cambierà il mondo ma superiamo che possa però essere d'aiuto ai ragazzi di seconda durante le loro competizioni. Personalemente lo riteniamo un successo perché, anche se l'obiettivo di questo progetto non era quello di diventare qualcosa di rivoluzionario ma qualcosa da utilizzare per facilitarsi la vita e velocizzare la scrittura del codice, esso fa esattamente quello per cui era stato pensato.
 
 ### Sviluppi futuri
   Migliorie al prodotto si possono fare aggiungendo dei metodi che svolgono programmi più complessi magari aspettando delle combinazioni di sensori ma non sappiamo se questo potrebbe tornare utile e se esso fosse necessario può essere facilmente sviluppato dagli allievi interessati.
