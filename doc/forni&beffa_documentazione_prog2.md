@@ -738,7 +738,7 @@ progetto.
 
 ## Consuntivo
 
-Come si pu
+Come si può notare
 <img src="img/GanttConsuntivo.png">
 
 ## Conclusioni
