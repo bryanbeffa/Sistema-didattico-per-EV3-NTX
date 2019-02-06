@@ -3,56 +3,55 @@
 
 1. [Introduzione](#introduzione)
 
-  - [Informazioni sul progetto](#informazioni-sul-progetto)
+    1. [Informazioni sul progetto](#informazioni-sul-progetto)
 
-  - [Abstract](#abstract)
+    1. [Abstract](#abstract)
 
-  - [Scopo](#scopo)
+    1. [Scopo](#scopo)
 
 1. [Analisi](#analisi)
 
-  - [Analisi del dominio](#analisi-del-dominio)
+    1. [Analisi del dominio](#analisi-del-dominio)
 
-  - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
+    1. [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
-  - [Pianificazione](#pianificazione)
+    1. [Pianificazione](#pianificazione)
 
-  - [Analisi dei mezzi](#analisi-dei-mezzi)
+    1. [Analisi dei mezzi](#analisi-dei-mezzi)
 
 1. [Progettazione](#progettazione)
 
-  - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
+    1. [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
-1. [Implementazione](#implementazione)
+    1. [Implementazione](#implementazione)
 
-  - [Libreria wait](#libreria-wait)
+    1. [Libreria wait](#libreria-wait)
 
-  - [LineFollower](#LineFollower)
+    1. [LineFollower](#LineFollower)
 
 1. [Test](#test)
 
-  - [Protocollo di test](#protocollo-di-test)
+    1. [Protocollo di test](#protocollo-di-test)
 
-  - [Risultati test](#risultati-test)
+    1. [Risultati test](#risultati-test)
 
-  - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
+    1. [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
 
 1. [Consuntivo](#consuntivo)
 
 1. [Conclusioni](#conclusioni)
 
-  - [Sviluppi futuri](#sviluppi-futuri)
+    1. [Sviluppi futuri](#sviluppi-futuri)
 
-  - [Considerazioni personali](#considerazioni-personali)
+    1. [Considerazioni personali](#considerazioni-personali)
 
 1. [Bibliografia](#bibliografia)
 
-    - [Sitografia](#sitografia)
-
+    1. [Sitografia](#sitografia)
 
 1. [Allegati](#allegati)
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
 
 ## Introduzione
 
@@ -129,90 +128,90 @@ secondo anno durante la WRO.
 
 </div>
 
-  |ID  |REQ-01                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore ultrasuono Java |
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato. |
+|ID  |REQ-01                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe sensore ultrasuono Java |
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato. |
 
-  <div style="page-break-after: always;"></div>
+|ID  |REQ-02                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe sensore di colore Java  |
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato.  |
 
-  |ID  |REQ-02                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore di colore Java  |
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato.  |
+<div class="page-break"></div>
 
-  |ID  |REQ-03                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore di tatto Java   |
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato.   |
+|ID  |REQ-03                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe sensore di tatto Java   |
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato.   |
 
-  |ID  |REQ-04                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore giroscopio Java |
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato.|
+|ID  |REQ-04                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe sensore giroscopio Java |
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato.|
 
-  |ID  |REQ-05                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore di luce Java|
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato. |
+|ID  |REQ-05                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe sensore di luce Java|
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato. |
 
-  |ID  |REQ-06                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe motore principale Java |
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato. |
+ |ID  |REQ-06                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe motore principale Java |
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato. |
 
-  |ID  |REQ-07                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe motore secondario Java |
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato. |
+|ID  |REQ-07                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe motore secondario Java |
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato. |
 
-  |ID  |REQ-08                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Classe sensore di suono Java|
-  |**Priorità**|1                              |
-  |**Versione**|2.0                            |
-  |**Note**    |Il requisito è stato eliminato.|
+|ID  |REQ-08                                         |
+|----|------------------------------------------------|
+|**Nome**    |Classe sensore di suono Java|
+|**Priorità**|1                              |
+|**Versione**|2.0                            |
+|**Note**    |Il requisito è stato eliminato.|
 
 <div style="page-break-after: always;"></div>
 
-  |ID  |REQ-09                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Libreria wait|
-  |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Libreria che riporta i metodi del blocchetto wait del linguaggio visivo di NXT.|
-  |            |**Sotto requisiti** |
-  |**001**      |Metodo di attesa del suono.|
-  |**002**      |Metodo di attesa della distanza rilevata con l'ultrasuoni.|
-  |**003**      |Metodo di attesa del tocco.|
-  |**004**      |Metodo di attesa della luce.|
-  |**005**      |Metodo di attesa di un lasso di tempo.|
-  |**006**      |Metodo di attesa del movimento in rotazioni dei motori.|
-  |**007**      |Metodo di attesa del movimento in gradi dei motori.|
+|ID  |REQ-09                                         |
+|----|------------------------------------------------|
+|**Nome**    |Libreria wait|
+|**Priorità**|1                              |
+|**Versione**|1.0                            |
+|**Note**    |Libreria che riporta i metodi del blocchetto wait del linguaggio visivo di NXT.|
+|            |**Sotto requisiti** |
+|**001**      |Metodo di attesa del suono.|
+|**002**      |Metodo di attesa della distanza rilevata con l'ultrasuoni.|
+|**003**      |Metodo di attesa del tocco.|
+|**004**      |Metodo di attesa della luce.|
+|**005**      |Metodo di attesa di un lasso di tempo.|
+|**006**      |Metodo di attesa del movimento in rotazioni dei motori.|
+|**007**      |Metodo di attesa del movimento in gradi dei motori.|
 
-  |ID  |REQ-10                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Progetto di dimostrazione e test|
-  |**Priorità**|1                              |
-  |**Versione**|1.0                            |
-  |**Note**    |Mini progetto che dimostra l'uso della libreria e ne testa il funzionamento.|
-  |            |**Sotto requisiti** |
-  |**001**      |Line follower percentuale.|
-  |**002**      |Controllo della presenza di oggetti davanti a se.|
+|ID  |REQ-10                                         |
+|----|------------------------------------------------|
+|**Nome**    |Progetto di dimostrazione e test|
+|**Priorità**|1                              |
+|**Versione**|1.0                            |
+|**Note**    |Mini progetto che dimostra l'uso della libreria e ne testa il funzionamento.|
+|            |**Sotto requisiti** |
+|**001**      |Line follower percentuale.|
+|**002**      |Controllo della presenza di oggetti davanti a se.|
 
 
 ### Pianificazione
@@ -224,7 +223,8 @@ Qui di seguito si può vedere il Gantt iniziale, nell'immagine si nota come era 
 </div>
 
 <img src="img/GanttIniziale.png">
-<div style="page-break-after: always;"></div>
+
+<div class="page-break"></div>
 
 ### Analisi dei mezzi
 
