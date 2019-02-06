@@ -63,7 +63,7 @@
 
   -   SAM Trevano, Informatica, I3AA
 
-  -   14.11.2018 - 01.02.2018
+  -   14.11.2018 - 08.02.2018
 
 
 ### Abstract
@@ -275,13 +275,14 @@ Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del m
 <img src="img/NXTMotorOptions.png" width=300>
 
 
-<div style="text-align:justify">
+<div style="text-align:justify; margin-bottom:10px;">
 
 Come seconda parte del progetto dovrà venire scritto un programma di test di alcuni dei metodi della libreria e del linguaggio RobotC in se così da verificare se esso porta dei vantaggi o meno.
 Il programma sarà un line follower proporzionale che si ferma ad una determinata distanza da un oggetto. Il robot avrà due sensori di luce, uno a destra e l'altro a sinistra della linea, ed uno di ultrasuoni che controllerà che non ci siano oggetti davanti a se e se ne rileva fa muovere un terzo motore.    
 
 </div>
-<div style="page-break-after: always;"></div>
+
+<div class="page-break"></div>
 
 ### Design dell’architettura del sistema
 
@@ -345,7 +346,7 @@ Esempio di utilizzo:
 
 Quando il sensore di tocco viene premuto il robot NXT  emette un suono.
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
 
 #### waitLight(int port, int threshold, bool higher)
 
@@ -433,7 +434,8 @@ Il robot avanza fino ad arrivare alla distanza decisa dall'utente da un
 oggetto, si ferma, e torna indietro.
 
 </div>
-<div style="page-break-after: always;"></div>
+
+<div class="page-break"></div>
 
 #### waitSound(int port, int threshold)
 
@@ -524,7 +526,7 @@ Esempio di utilizzo:
 
 Il robot deve avanzare di 5 rotazioni del motore.
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
 
 #### waitDegrees(int port, int deegre, int speed)
 
@@ -582,8 +584,6 @@ tramite dei metodi che abbiamo creato setWhite() and setBlack().
 
 </div>
 
-
-
 ```
 //variabili in cui viene salvato il valore del colore bianco e nero
 int white;
@@ -622,9 +622,9 @@ int setBlack()
 }
  ```
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
 
- Successivamente il robot inizia a svolgere il line follower.
+Successivamente il robot inizia a svolgere il line follower.
 
  ```
  while(waitDistance(distance, 20)){
@@ -710,7 +710,7 @@ waitDegrees(motorC, 160, -20);
 |**Procedura**     | Bisognerà aprire la classe di test TestLibrary.c e, per ogni metodo della libreria Wait.h, Bisognerà collegare al robot i sensori/attuatori giusti, decommentare il metodo di test ed eseguirlo. Se il robot attende la soglia o il valore atteso allora il metodo richiamato funzionerà correttamente  |
 |**Risultati attesi** |Con tutti i metodi richiamati il robot dovrebbe attendere il valore o la soglia e poi terminare il programma. |
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
 
 |Test Case      | TC-002                               |
 |---------------|--------------------------------------|
@@ -722,11 +722,10 @@ waitDegrees(motorC, 160, -20);
 |**Risultati attesi** |Il robot dovrebbe iniziare a seguire la linea nera. |
 
 
-
 ### Risultati test
 
-|Risultati dei test |                   |                |
-|-------------------|-----------------------------------|
+|Risultati dei test |                   |               |
+|-------------------|-------------------|---------------|
 |**Test case**      |**Risultato**      |**Note**       |
 |TC-001             |successo           |-              |
 |TC-002             |successo           |-              |
@@ -749,7 +748,7 @@ Questa soluzione certamente non cambierà il mondo ma superiamo che possa però 
 ### Sviluppi futuri
   Migliorie al prodotto si possono fare aggiungendo dei metodi che svolgono programmi più complessi magari aspettando delle combinazioni di sensori ma non sappiamo se questo potrebbe tornare utile e se esso fosse necessario può essere facilmente sviluppato dagli allievi interessati.
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
 
 ### Considerazioni personali
   Da questo progetto abbiamo imparato che ci sono svariati linguaggi di programmazione marginali, ma che se conosciuti possono aiutare con cose che se sviluppate senza di essi risultano complicate. Noi personalmente, anche se siamo sempre stati scettici dell'utilità del prodotto finale, siamo soddisfatti dai risultati ottenuti.
@@ -787,3 +786,7 @@ Questa soluzione certamente non cambierà il mondo ma superiamo che possa però 
 -   Libreria di wait
 
 -   Programma dimostrativo
+
+-   Immagine Gantt iniziale
+
+-   Immagine Gantt finale
