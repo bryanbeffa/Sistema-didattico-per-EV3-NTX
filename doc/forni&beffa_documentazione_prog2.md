@@ -783,7 +783,7 @@ Questa soluzione certamente non cambierà il mondo ma superiamo che possa però 
 
 -   Istruzioni di installazione del firmware
 
--   Libreria di wait
+-   Istruzioni libreria wait.h
 
 -   Programma dimostrativo
 
