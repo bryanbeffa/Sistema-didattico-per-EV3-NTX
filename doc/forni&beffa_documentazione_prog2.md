@@ -311,7 +311,7 @@ I metodi che abbiamo definito sono:
 - waitSound(int, int)
 - waitTime(long)
 - waitRotations(int, int, int)
-- waitDegree(int, int, int)
+- waitDegrees(int, int, int)
 
 #### waitTouch(int port)
 
