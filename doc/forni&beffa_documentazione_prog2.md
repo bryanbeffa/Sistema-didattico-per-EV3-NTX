@@ -320,10 +320,9 @@ I metodi che abbiamo definito sono:
 
 <div style="text-align:justify">
 
-Il metodo d'attesa waitTouch(int port) richiede la porta a cui è collegato il sensore come parametro. Questo metodo attende che il sensore di tatto venga premuto.
+Il metodo d'attesa waitTouch(int port) richiede come parametro la porta a cui è collegato il sensore. Questo metodo attende che il sensore di tatto venga premuto.
 
-Il metodo è molto semplice. Viene dichiarata una variabile booleana che indica se il sensore di tocco è premuto.  
-Quando il sensore viene premuto il valore letto dal sensore corrisponde "0" e alla variabile booleana viene assegnato il valore *true* in modo che il ciclo *while* termini.
+Esso è molto semplice. Viene dichiarata una variabile booleana che indica se il sensore di tatto è premuto, quando il sensore viene premuto il valore letto corrisponde "0" e alla variabile booleana viene assegnato il valore *true* in modo che il ciclo *while* termini.
 
 </div>
 
