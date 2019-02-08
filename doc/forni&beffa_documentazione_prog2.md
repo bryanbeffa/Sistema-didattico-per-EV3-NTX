@@ -238,6 +238,9 @@ I software che sono stati utilizzati sono i seguenti:
 
 - LEGO Mindstorm NXT
 - RobotC IDE
+- Microsoft Word 2016
+- Microsoft PowerPoint 2016
+- Atom 1.34.0 x64
 
 #### Hardware
 
