@@ -1,5 +1,5 @@
 <h1>Sistema didattico per NXT</h1>
-<h4>Matteo Forni e Bryan Beffa</h4>
+<h4>Bryan Beffa e Matteo Forni</h4>
 
 1. [Introduzione](#introduzione)
 
@@ -57,13 +57,13 @@
 
 ### Informazioni sul progetto
 
-  -   Allievi: Matteo Forni e Bryan Beffa
+  -   Allievi: Bryan Beffa e Matteo Forni
 
-  -   Docenti: Luca Muggiasca, Francesco Mussi, Adriano Barchi, Massimo Sartori
+  -   Docenti: Adriano Barchi, Luca Muggiasca, Francesco Mussi, Massimo Sartori
 
   -   SAM Trevano, Informatica, I3AA
 
-  -   14.11.2018 - 08.02.2018
+  -   14.11.2018 - 08.02.2019
 
 
 ### Abstract
@@ -129,7 +129,7 @@ secondo anno durante la WRO.
 </div>
 
 |ID  |REQ-01                                         |
-|----|------------------------------------------------|
+|----|----------------------------------------------------|
 |**Nome**    |Classe sensore ultrasuono Java |
 |**Priorità**|1                              |
 |**Versione**|2.0                            |
