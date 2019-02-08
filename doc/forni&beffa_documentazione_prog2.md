@@ -275,9 +275,6 @@ Oltre a ciò la libreria contiene tre metodi che rappresentano i movimenti del m
 
 </div>
 
-<img src="img/NXTMotorOptions.png" width=300>
-
-
 <div style="text-align:justify; margin-bottom:10px;">
 
 Come seconda parte del progetto dovrà venire scritto un programma di test di alcuni dei metodi della libreria e del linguaggio RobotC in se così da verificare se esso porta dei vantaggi o meno.
